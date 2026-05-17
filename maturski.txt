@@ -1,0 +1,1091 @@
+                                                       Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+                    Prva kragujevacka gimnazija
+
+MATURSKI RAD IZ MATEMATIKE
+
+         Matematika muzicke harmonije
+
+                                                                   Ucenik: Sava ukovi
+                                                  Mentor: Marija Rafajlovi Stojkovi
+                          Kragujevac, 2026.
+
+                                            1
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+Uvod
+
+Muzika i matematika retko se pominju u istom dahu, a ipak veza izmeu njih spada meu
+najstarije poznate veze u istoriji nauke. Jos u sestom veku pre nove ere, Pitagora je primetio da
+intervali koji zvuce prijatno ljudskom uhu nastaju kada su duzine vibrirajuih zica u odnosu
+malih celih brojeva. To otkrie, naizgled jednostavno, otvorilo je pitanje koje ni danas nije u
+potpunosti iscrpljeno: koliko daleko seze matematicka zakonitost iza onoga sto cujemo kao
+lepo?
+Ovaj rad bavi se upravo tim pitanjem. Predmet istrazivanja je matematicka osnova muzicke
+harmonije, preciznije, formalna analiza odnosa izmeu akustickih fenomena i numerickih
+struktura koje ih opisuju. Muzicka harmonija ovde se ne posmatra kao estetska kategorija, ve
+kao sistem merljivih relacija izmeu frekvencija tonova, relacija koje se mogu izvesti iz fizike
+zvuka i teorije brojeva.
+Centralni problem rada jeste nesamerljivost dva najosnovnija muzicka intervala: ciste kvinte i
+oktave. Dvanaest uzastopnih cistih kvinti matematicki ne stize nazad do polaznog tona, ve ga
+promasi za mali ali tvrdoglav iznos poznat kao pitagorejska koma. Ovaj problem, koji je mucio
+muzicare i matematicare vise od dva milenijuma, konacno je resen uvoenjem jednako
+temperovanog ugaanja, sistema koji pociva na iracionalnom broju ¹²2 i za cije je razumevanje
+neophodna logaritamska funkcija.
+Rad prati logican put od jednostavnog ka slozenom. Najpre se izlazu matematicki alati koji cine
+osnovu analize: razlomci, geometrijski nizovi i logaritmi. Potom se predstavlja pitagorejska
+teorija harmonije i konstrukcija skale zasnovane iskljucivo na kvintama. Fizika zvuka (talasno
+kretanje, stojei talasi, obertonski niz) daje fizicko utemeljenje svemu sto su Pitagorejci otkrili
+intuitivno. Analiza konsonance i disonance objasnjava zasto jednostavni razlomci proizvode
+prijatan zvuk. Logaritmi potom omoguavaju precizno merenje muzickih rastojanja i uvode
+temperovani sistem. Furijeova analiza pruza formalan okvir za razlaganje slozenog zvuka na
+proste komponente. Na kraju, svi ovi alati primenjuju se na jedan konkretan primer: analizu C-
+dur akorda, cime teorija dobija prakticnu potvrdu.
+Cilj nije samo izlaganje poznatih rezultata, ve i demonstracija toga da matematika, fizika i
+muzika nisu tri odvojene discipline koje se ponekad dodiruju, ve tri perspektive istog
+fenomena. Svaki akord koji cujemo sadrzi u sebi pitagorejske razlomke, Furijeove koeficijente
+i logaritamske odnose.
+
+                                                                   2
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+1. Teorijska osnova
+
+Matematicka analiza muzicke harmonije oslanja se na nekoliko kljucnih koncepata koji
+zasluzuju pazljivo objasnjenje pre nego sto budu primenjeni na muzicke fenomene. U ovom
+poglavlju definisu se razlomci i njihova aritmetika, geometrijski nizovi, logaritamska funkcija
+i pojam iracionalnosti.
+
+1.1 Razlomci i odnosi celih brojeva
+
+Razlomak a/b (gde su a i b celi brojevi, b  0) predstavlja odnos dve velicine. U muzici,
+razlomci sluze za izrazavanje odnosa frekvencija dva tona, sto je osnovna numericka
+karakterizacija svakog muzickog intervala. Kada kazemo da je kvinta opisana razlomkom 3/2,
+to znaci da visi ton vibrira tacno 1,5 puta brze od nizeg.
+Razlomak je u skraenom obliku kada su mu brojilac i imenilac uzajamno prosti, odnosno
+kada im je najvei zajednicki delilac jednak 1. Tako se 6/4 skrauje na 3/2, jer je NZD(6, 4) =
+2. Skraeni oblik je vazan jer upravo on otkriva sustinski karakter intervala: sto su brojevi u
+skraenom razlomku manji, interval zvuci cistije.
+Tri svojstva razlomaka posebno su znacajna za muzicku analizu.
+Mnozenje razlomaka odgovara uzastopnoj primeni dva intervala. Ako je prvi interval opisan
+odnosom a/b, a drugi odnosom c/d, njihovo nadovezivanje daje interval (a·c)/(b·d). Ovo ima
+neposrednu muzicku posledicu: kvinta (3/2) primenjena na kvartu (4/3) daje 3/2 · 4/3 = 2/1, a
+2/1 je oktava. Drugim recima, kvinta i kvarta zajedno cine tacno jednu oktavu, cinjenica koja
+se lako proverava na klaviru.
+Reciprocna vrednost razlomka a/b jednaka je b/a i odgovara inverziji intervala: ako je kvinta
+navise 3/2, onda je kvinta nanize 2/3. Ova simetrija je korisna pri konstrukciji skala, gde se
+tonovi dobijaju kretanjem i navise i nanize od polaznog tona.
+Poreenje razlomaka odreuje koji je interval vei. Vazi da je a/b > c/d ako i samo ako je a·d
+> b·c. Ovo pravilo koristi se pri rasporeivanju tonova skale po visini, sto je neophodno kada
+se tonovi dobijeni kvintama svedu u okvir jedne oktave.
+
+1.2 Geometrijski nizovi
+
+Definicija. Geometrijski niz je niz brojeva u kome se svaki sledei clan dobija mnozenjem
+prethodnog konstantnim faktorom q, koji se naziva kolicnik niza. Ako je prvi clan a, opsti clan
+niza glasi:
+
+                                                                   3
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+                                                 a = a · q¹
+Ono sto geometrijski niz cini relevantnim za muziku jeste upravo osobina konstantnog
+kolicnika. Kod aritmetickog niza, razlika izmeu susednih clanova je uvek ista, ali ljudsko uho
+ne cuje razlike frekvencija, ve njihove odnose. Skok od 100 Hz do 200 Hz dozivljavamo kao
+oktavu, ali i skok od 1000 Hz do 2000 Hz dozivljavamo kao istu oktavu, iako je apsolutna
+razlika u prvom slucaju 100 Hz, a u drugom citavih 1000 Hz. Percepcija je multiplikativna, ne
+aditivna, i zato je geometrijski niz prirodan matematicki model za tonsku skalu.
+U jednako temperovanom sistemu, dvanaest polustepena unutar jedne oktave cini geometrijski
+niz sa kolicnikom q = ¹²2  1.05946. Frekvencija tona koji se nalazi n polustepena iznad
+polaznog tona frekvencije f iznosi:
+
+                                                f = f · (¹²2)
+Posle dvanaest takvih koraka, frekvencija se tacno udvostruci: (¹²2)¹² = 2. Time se krug zatvara
+i dobija se savrsena oktava, ali po cenu toga da nijedan pojedinacni interval osim oktave nije
+izrazen razlomkom celih brojeva.
+
+1.3 Logaritamska funkcija
+
+Definicija. Neka je a > 0, a  1, i x > 0. Logaritam broja x za osnovu a jeste onaj eksponent y
+za koji vazi a = x. Zapisujemo:
+
+                                        y = log(x)  a = x
+Drugim recima, logaritam odgovara na pitanje: na koji stepen treba podii osnovu a da bi se
+dobio broj x? Tako je log(8) = 3, jer je 2³ = 8; a log(1) = 0, jer je 2 = 1.
+
+Osnovna svojstva
+Za x, y > 0 i realan broj n, vaze sledea svojstva logaritamske funkcije:
+(L1) Logaritam proizvoda: log(x · y) = log(x) + log(y)
+(L2) Logaritam kolicnika: log(x / y) = log(x) - log(y)
+(L3) Logaritam stepena: log(x) = n · log(x)
+(L4) log(a) = 1 (L5) log(1) = 0
+Svojstvo (L1) zasluzuje poseban komentar jer je od sustinskog znacaja za muziku. Ono prevodi
+mnozenje u sabiranje. Kada muzicar nadovezuje dva intervala, recimo kvintu pa kvartu, on to
+dozivljava kao sabiranje dva koraka. Matematicki, meutim, odnosi frekvencija se mnoze: 3/2
+
+                                                                   4
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+· 4/3 = 2/1. Logaritam pomiruje ove dve perspektive: log(3/2) + log(4/3) = log(2) = 1.
+Sabiranje logaritamskih mera tacno odgovara muzickom iskustvu nadovezivanja intervala.
+
+Promena osnove
+Logaritam za jednu osnovu moze se izraziti preko logaritma za bilo koju drugu osnovu:
+
+                                       log(x) = log_b(x) / log_b(a)
+Ova formula je prakticno korisna jer kalkulatori obicno nude samo prirodni logaritam (ln) ili
+dekadni logaritam (log), dok je u muzickoj teoriji najcese potreban logaritam za osnovu 2.
+
+Zasto bas osnova 2?
+U muzickoj akustici, logaritam za osnovu 2 zauzima posebno mesto iz jednostavnog razloga:
+oktava odgovara udvostrucenju frekvencije, pa je log(2) = 1. Time log postaje prirodna mera
+muzickog rastojanja: interval sa odnosom frekvencija r iznosi tacno log(r) oktava.
+Za kvintu (odnos 3/2), to daje:
+
+                      log(3/2) = log(3) - log(2)  1.585 - 1 = 0.585 oktava
+Iz ove vrednosti izvodi se i merna jedinica cent: jedna oktava deli se na 1200 centi, pa svaki
+interval sa odnosom r iznosi n = 1200 · log(r) centi. Cent je dovoljno fina jedinica da se njime
+mogu izraziti i najmanje razlike koje ljudsko uho moze da registruje.
+
+1.4 Iracionalni brojevi
+
+Definicija. Realan broj je iracionalan ako se ne moze zapisati u obliku p/q, gde su p i q celi
+brojevi (q  0). Iracionalni brojevi ne mogu se izraziti ni kao konacni ni kao periodicni
+decimalni zapisi.
+Znacaj iracionalnosti za muziku nije odmah ocigledan, ali je dubok. Pitagorejska skola izgradila
+je citavu teoriju harmonije na razlomcima, na uverenju da se svaki muzicki odnos moze izraziti
+kao kolicnik dva cela broja. Temperovani polustepen ¹²2 je, meutim, iracionalan broj, sto
+znaci da moderna muzika pociva na osnovi koju bi Pitagorejci smatrali nemoguom.
+Sa iracionalnosu povezan je i pojam nesamerljivosti. Dva intervala su nesamerljiva ako ne
+postoji trei interval cijim bi se celobrojnim ponavljanjem mogla dobiti oba. Pitagorejska koma
+nastaje upravo zato sto su kvinta i oktava nesamerljive: ne postoje pozitivni celi brojevi m i n
+takvi da (3/2) = 2.
+
+                                                                   5
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+2. Pitagorejci
+
+U sestom veku pre nove ere, na ostrvu Samos, grcki filozof i matematicar Pitagora izveo je
+jedan od najranijih poznatih eksperimenata u istoriji nauke. Koristei instrument sa jednom
+zategnutom zicom, primetio je da odnos izmeu duzine zice i visine zvuka koji ona proizvodi
+nije slucajan. Taj odnos bio je matematicki. Posledice tog otkria odzvanjaju i danas, u svakom
+akordu koji cujemo.
+
+2.1 Monohord
+
+Instrument koji je Pitagora koristio naziva se monohord (grc. monos, jedan; chorde, zica).
+Sastoji se od jedne zategnute zice postavljene preko rezonantne kutije, sa pokretnim pragom
+koji omoguava da se slobodna duzina zice menja. Menjajui polozaj praga, Pitagora je mogao
+da kontrolise koji deo zice slobodno vibrira, a samim tim i visinu tona koji zica proizvodi.
+Eksperiment je bio jednostavan, ali rezultat dalekosezan: pokazalo se da intervali koje uho
+prepoznaje kao prijatne nastaju upravo onda kada su duzine vibrirajuih delova zice u odnosu
+malih celih brojeva. Na sledeoj slici prikazan je princip rada monohorda:
+
+                 Slika 1: Monohord. Podela zice na 1/2, 2/3 i 3/4 duzine daje oktavu, kvintu i kvartu.
+
+2.2 Muzicki intervali
+
+Pre nego sto preciziramo sta je Pitagora otkrio, neophodno je uvesti osnovne muzicke pojmove.
+U muzici, interval je rastojanje izmeu dva tona po visini. Za razliku od rastojanja na brojevnoj
+pravoj, koje se meri u apsolutnim jedinicama, muzicki interval se karakterise odnosom
+frekvencija dva tona, kolicnikom, a ne razlikom. Ovo je kljucna distinkcija: interval izmeu
+tonova od 200 Hz i 300 Hz isti je kao interval izmeu 400 Hz i 600 Hz (oba su u odnosu 3/2),
+iako je apsolutna razlika frekvencija u drugom slucaju duplo vea.
+U muzickom sistemu, oktava (interval izmeu jednog tona i prvog ponavljanja tog istog tona
+na visoj visini) podeljena je na 12 polustepena, odnosno 6 celih tonova. To su sve bele i crne
+
+                                                                   6
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+dirke na klaviru izmeu jednog C i sledeeg C. Razliciti intervali obuhvataju razlicit broj tih
+polustepena:
+Oktava (12 polustepena) je interval od jednog tona do prvog ponavljanja istoimenog tona na
+visoj visini, na primer od C do viseg C. Naziv potice od latinske reci octavus (osmi), jer u
+osnovnoj skali od sedam tonova osmi ton ponavlja prvi. Dva tona razdvojena oktavom zvuce
+toliko slicno da ih dozivljavamo gotovo kao isti ton na razlicitoj visini: kada muskarac i zena
+pevaju istu melodiju, oni najcese pevaju u oktavama.
+Cista kvinta (7 polustepena,) obuhvata razmak od, na primer, C do G. Kvinta je, posle oktave,
+najprijatniji interval ljudskom uhu. Toliko je stabilna da na njoj pociva citav sistem harmonije:
+akordi, lestvice i principi ugaanja instrumenata.
+Cista kvarta (5 polustepena) je interval od C do F. Kvarta i kvinta su komplementarni intervali:
+zajedno cine tacno jednu oktavu. Ako od C odemo kvintu navise do G, pa onda od G kvartu
+navise, stizemo do C koji je jednu oktavu iznad polaznog tona.
+Velika terca (4 polustepena) je interval od C do E. Terca daje akordima vedar, svetao karakter
+i jedan je od najvaznijih intervala u harmoniji. Pitagorejska vrednost velike terce (81/64)
+razlikuje se od vrednosti iz kasnijeg cistog ugaanja (5/4).
+
+2.3 Pitagorino otkrie
+
+U daljem tekstu koristimo sledeu notaciju: sa f oznacavamo frekvenciju tona C, sa f
+frekvenciju tona G, sa f frekvenciju tona D, i analogno za sve ostale tonove. Opstije, f
+oznacava frekvenciju proizvoljnog tona X. Ova notacija omoguava da se odnosi izmeu
+tonova zapisu kompaktno i jednoznacno.
+Pitagora je, menjajui duzinu slobodnog dela zice na monohordu, dosao do otkria koje se moze
+sazeti u jednu recenicu: intervali koji zvuce prijatno nastaju kada su duzine zica u odnosu
+malih celih brojeva.
+Konkretno: kada je zicu podelio tacno na polovinu (1/2 osnovne duzine), dobio je ton za oktavu
+visi od osnovnog. Kada je ostavio dve treine zice da slobodno vibriraju (2/3 duzine), dobio je
+cistu kvintu. Tri cetvrtine zice (3/4) davale su cistu kvartu.
+Danas ove odnose mozemo izraziti preciznije. Frekvencija vibriranja zice obrnuto je
+proporcionalna njenoj duzini: kraa zica vibrira brze i daje visi ton. Ako zica pune duzine L
+proizvodi ton frekvencije f, tada zica duzine L/n vibrira n puta brze i daje frekvenciju n·f. Prema
+tome, odnos frekvencija za svaki interval jeste reciprocan odnosu duzina zica. Matematicki:
+
+                                                                   7
+                                Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+                                  f  1/L odnosno f/f = L/L
+Pitagorejski intervali, izvedeni iskljucivo iz odnosa duzina zice, prikazani su u sledeoj tabeli:
+
+Interval      Polustepeni  Odnos duzina  Odnos frekv.                                          Primer
+                                                                                               CC
+Unisono       0 (0 t)      1:1           1/1                                                   CF
+                                                                                               CG
+Cista kvarta  5 (2,5 t)    3:4           4/3                                                   C  C'
+
+Cista kvinta  7 (3,5 t)    2:3           3/2
+
+Oktava        12 (6 t)     1:2           2/1
+
+              Tabela 1: Pitagorejski intervali, izvedeni iskljucivo iz prostih brojeva 2 i 3.
+
+Obrazac je jasan: sto su brojevi u razlomku manji, to interval zvuci cistije i stabilnije. Oktava
+(2/1) je najcistiji interval, kvinta (3/2) je odmah iza nje, kvarta (4/3) je i dalje izuzetno stabilna.
+
+U literaturi se cesto sreu i intervali poput velike terce (5/4) i velike sekste (5/3). Ovi odnosi ne
+poticu iz pitagorejskog sistema, ve iz kasnijeg, takozvanog cistog ugaanja (just intonation),
+koje u razmatranje uvodi i prost broj 5. Pitagorejska skola gradila je svoju skalu iskljucivo
+koristei kvinte i oktave, dakle samo proste brojeve 2 i 3. Razlika izmeu pitagorejske velike
+terce (81/64  1.2656) i ciste velike terce (5/4 = 1.2500) iznosi oko 21.5 centi i poznata je kao
+sintonicka koma.
+
+2.4 Konstrukcija pitagorejske skale
+
+Pitagorejci su citavu muzicku skalu izgradili koristei samo dva intervala: oktavu (2/1) i cistu
+kvintu (3/2). Postupak se u celosti svodi na aritmetiku razlomaka. Pravilo je sledee: polazimo
+od tona C frekvencije f, gradimo tonove uzimanjem uzastopnih kvinti, i svaki put kada
+rezultujua frekvencija iskoci izvan opsega jedne oktave (tj. kada odnos prema f postane vei
+od 2), spustamo ton za jednu oktavu (delimo odnos sa 2).
+
+C (unisono, polazni ton): f = f × 1/1. Ovo je referentna frekvencija od koje polazimo.
+
+G (cista kvinta): Jedna kvinta navise od C daje f = f × 3/2. Rezultat 3/2 = 1.5 je manji od 2,
+pa ton G ostaje u okviru polazne oktave. Interval od C do G je cista kvinta (7 polustepena, 3,5
+tonova).
+
+D (velika sekunda): Kvinta navise od G daje f = f × (3/2)² = f × 9/4. Rezultat 9/4 = 2.25 je
+vei od 2, sto znaci da je ton D iskocio iz polazne oktave. Spustamo ga za jednu oktavu (delimo
+sa 2): f = f × 9/8. Broj 9/8 = 1.125 jeste pitagorejski ceo ton, osnovni korak od kojeg je
+izgraena skala, i odgovara intervalu od 2 polustepena (1 ton).
+
+                           8
+                               Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+A (velika seksta): Kvinta navise od D: f = f × 9/8 × 3/2 = f × 27/16. Rezultat 27/16 = 1.6875
+< 2, ton A ostaje u opsegu. Interval od C do A iznosi 9 polustepena (4,5 tonova).
+
+E (velika terca): Kvinta navise od A: f = f × 27/16 × 3/2 = f × 81/32. Rezultat 81/32 =
+2.53125 > 2. Spustamo za oktavu: f = f × 81/64. Vrednost 81/64  1.2656 je pitagorejska
+velika terca (4 polustepena, 2 tona). Ovo je nesto vee od ciste terce 5/4 = 1.25.
+
+B (velika septima): Kvinta navise od E: f = f × 81/64 × 3/2 = f × 243/128. Rezultat 243/128
+ 1.8984 < 2, ton B ostaje u opsegu. Interval od C do B iznosi 11 polustepena (5,5 tonova).
+
+F (cista kvarta): Kvartu ne mozemo dobiti kvintama navise na jednostavan nacin. Umesto
+toga, idemo jednu kvintu nanize od C: f = f × 2/3. Rezultat 2/3  0.667 < 1, ton je ispao ispod
+polazne oktave. Podizemo za jednu oktavu (mnozimo sa 2): f = f × 4/3. Ovo ujedno potvruje
+komplementarnost kvinte i kvarte: 3/2 × 4/3 = 2/1 = oktava. Interval od C do F je 5 polustepena
+(2,5 tonova).
+
+Sreivanjem svih dobijenih tonova po visini, od najnizeg ka najvisem, dobija se kompletna
+pitagorejska skala:
+
+Ton  Interval od C   Razlomak Decimalno Polust. Korak od preth.
+
+C    unisono         1/1       1.0000  0                                              /
+
+D    velika sekunda  9/8       1.1250  2   9/8 (ceo ton)
+
+E    velika terca    81/64     1.2656  4   9/8 (ceo ton)
+
+F    cista kvarta    4/3       1.3333  5   256/243 (limma)
+
+G    cista kvinta    3/2       1.5000  7   9/8 (ceo ton)
+
+A    velika seksta   27/16     1.6875  9   9/8 (ceo ton)
+
+B    velika septima  243/128 1.8984    11  9/8 (ceo ton)
+
+C'   oktava          2/1       2.0000  12  256/243 (limma)
+
+     Tabela 2: Kompletna pitagorejska C-dur skala sa koracima izmeu susednih tonova.
+
+Poslednja kolona tabele otkriva unutrasnju strukturu skale. Izmeu veine susednih tonova stoji
+pitagorejski ceo ton sa odnosom 9/8  1.1250 (oko 204 centa). Meutim, na dva mesta (izmeu
+E i F, te izmeu B i C') korak je manji i iznosi 256/243  1.0535 (oko 90 centi). Ovaj manji
+korak naziva se limma (pitagorejski polustepen) i nesto je manji od temperovanog polustepena
+(100 centi). Skala se, dakle, sastoji od pet celih tonova i dve lime: T­T­L­T­T­T­L, sto je
+prepoznatljiva struktura durske lestvice.
+
+Svi razlomci u tabeli imaju oblik 3/2 (za odgovarajue cele brojeve a i b), jer su nastali
+iskljucivo mnozenjem sa 3/2 i deljenjem sa 2. U toj matematickoj pravilnosti lezi i lepota i
+problem ove skale, problem koji se manifestuje cim pokusamo da zatvorimo krug kvinti.
+
+                            9
+                           Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+2.5 Pitagorejska koma
+
+Pitagorejski metod izgleda savrseno: uzimamo kvinte, vraamo u oktavu i gradimo skalu.
+Logicno bi bilo ocekivati da se nakon dvanaest uzastopnih kvinti savrseno vratimo na polazni
+ton, samo sedam oktava vise. Dvanaest kvinti trebalo bi da nas provede kroz svih dvanaest
+tonova hromatske skale i dovede nazad na pocetak.
+
+Proverimo to racunski. Dvanaest cistih kvinti daje odnos frekvencija:
+
+                    (3/2)¹² = 3¹² / 2¹² = 531441 / 4096  129.746
+
+Sedam oktava daje:
+
+                                                    2 = 128
+Ova dva broja nisu jednaka. Kolicnik izmeu dvanaest kvinti i sedam oktava naziva se
+pitagorejska koma i iznosi:
+
+                                (3/2)¹² / 2 = 531441 / 524288  1.01364
+Izrazeno u centima: 1200 · log(531441/524288)  23.46 centi, sto je otprilike cetvrtina
+polustepena. U muzickoj praksi, ovo znaci da krug kvinti ne moze da se zatvori. Ako od tona
+C krenemo nizom kvinti C  G  D  A  E  B  F  C  G  D  A  F
+ C, ton na koji stignemo nakon dvanaest koraka nije isti C koji je sedam oktava iznad
+polaznog. On je za pitagorejsku komu visi, mali ali jasno merljiv ostatak od oko 1.36%.
+
+                       10
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+             Slika 2: Krug kvinti. Crvena isprekidana strelica pokazuje da se krug ne zatvara savrseno.
+
+Ovo nije greska u racunanju. To je fundamentalno matematicko ogranicenje, i moze se dokazati
+strogo.
+Teorema. Ne postoje pozitivni celi brojevi m i n takvi da vazi (3/2) = 2.
+Dokaz. Pretpostavimo suprotno, da postoje pozitivni celi brojevi m i n za koje vazi (3/2) = 2.
+Mnozimo obe strane sa 2 i dobijamo:
+
+                                                   3 = 2
+Razmotrimo levu i desnu stranu ove jednakosti.
+Leva strana: 3. Broj 3 je neparan, a proizvod neparnih celih brojeva uvek je neparan, to sledi
+iz cinjenice da nijedan faktor ne sadrzi prost broj 2 kao delilac. Prema Osnovnoj teoremi
+aritmetike, jedinstven rastav broja 3 na proste cinioce je 3·3·...·3 (m puta), bez ijednog faktora
+2. Dakle, 3 je neparan za svako m  1.
+Desna strana: 2. Posto su m, n  1, vazi m + n  2, pa je 2 deljivo sa 2, dakle paran.
+Stavise, rastav na proste cinioce sadrzi iskljucivo faktor 2, bez ijednog faktora 3.
+Dobili smo da bi 3 istovremeno bio neparan (leva strana) i paran (desna strana), sto je
+kontradikcija. Alternativno, po Osnovnoj teoremi aritmetike, svaki pozitivan ceo broj ima
+jedinstven rastav na proste cinioce, a broj ne moze istovremeno imati rastav koji sadrzi samo
+trojke i rastav koji sadrzi samo dvojke. 
+Posledica. log(3/2) je iracionalan broj.
+Dokaz. Kada bi log(3/2) bio racionalan i jednak n/m za neke pozitivne cele brojeve m i n, tada
+bi iz definicije logaritma sledilo 2/ = 3/2, odnosno (3/2) = 2, sto je u kontradikciji sa upravo
+dokazanom teoremom. 
+Muzicki znacaj ove posledice je dubok: posto je log(3/2) iracionalan, kvinta i oktava su
+nesamerljive. Ne postoji nikakav interval, ma koliko mali, koji bi celobrojni broj puta dao
+tacno kvintu i istovremeno celobrojni broj puta dao tacno oktavu. Ovaj ostatak od 23.46 centi
+mucio je muzicare i matematicare vise od dva milenijuma. Pokusaji da se pitagorejska koma
+sakrije, rasporedi ili apsorbuje doveli su do razvoja razlicitih sistema ugaanja: srednjotonskog,
+dobro temperovanog i cistog ugaanja. Konacno resenje, jednako temperovano ugaanje,
+zahteva logaritme i iracionalne brojeve.
+
+                                                                  11
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+3. Fizika zvuka
+
+Pitagorejci su otkrili da prijatni muzicki intervali odgovaraju jednostavnim numerickim
+odnosima, ali nisu mogli da objasne zasto je to tako. Za odgovor na to pitanje potrebna je fizika:
+nauka o vibracijama, talasima i frekvencijama. Ovo poglavlje uvodi fizicke osnove zvuka i
+pokazuje kako iz njih prirodno proizlaze upravo oni razlomci koje su Pitagorejci empirijski
+pronasli.
+
+3.1 Zvuk kao mehanicki talas
+
+Zvuk je mehanicki poremeaj koji se prostire kroz elasticnu sredinu (vazduh, vodu, cvrsto telo)
+u obliku longitudinalnog talasa. Izvor zvuka, recimo vibrirajua zica gitare, periodicno pomera
+okolne cestice vazduha, stvarajui naizmenicne zone povisenog i snizenog pritiska. Ove zone
+se sire od izvora brzinom koja zavisi od sredine: u vazduhu na 20°C ta brzina iznosi priblizno
+343 m/s.
+Matematicki, prostiranje talasa duz jedne dimenzije opisuje se talasnom jednacinom:
+
+                                             ²y/t² = v² · ²y/x²
+gde je y(x, t) pomeranje cestice sredine na mestu x u trenutku t, a v brzina prostiranja talasa.
+Ova parcijalna diferencijalna jednacina, poznata i kao d'Alamberova jednacina, opisuje svaki
+tip talasnog kretanja, od zvucnih talasa u vazduhu do vibracija na zici klavira.
+
+3.2 Frekvencija, talasna duzina i amplituda
+
+Svaki periodicni talas karakterisu tri velicine.
+Frekvencija (f) je broj potpunih oscilacija u jednoj sekundi, izrazena u hercima (Hz). Ton A
+iznad srednjeg C, koji sluzi kao referentni ton za ugaanje instrumenata, ima frekvenciju od
+440 Hz, sto znaci da vazdusni pritisak na mestu slusaoca osciluje 440 puta u sekundi.
+Frekvencija odreuje ono sto muzicari nazivaju visinom tona: visa frekvencija znaci visi ton.
+Talasna duzina () je prostorno rastojanje izmeu dve susedne tacke talasa u istoj fazi, recimo
+izmeu dva susedna maksimuma pritiska. Talasna duzina i frekvencija povezane su
+jednostavnom relacijom:
+
+                                                    v=f·
+gde je v brzina prostiranja talasa. Za ton A (440 Hz) u vazduhu, talasna duzina iznosi  =
+343/440  0.78 m, dakle nesto manje od jednog metra.
+
+                                                                  12
+                                     Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+Amplituda (A) je maksimalno pomeranje cestice iz ravnoteznog polozaja. Amplituda odreuje
+glasnou zvuka: vea amplituda znaci glasniji zvuk. Za razliku od frekvencije, koja direktno
+utice na muzicku visinu, amplituda ne menja percepciju tona, samo njegovu jacinu.
+
+Najjednostavniji oblik periodicnog talasa je sinusoidni talas, opisan funkcijom:
+
+                                       y(x, t) = A · sin(2f·t - 2x/)
+Sinusoidni talas proizvodi takozvani cist ton, ton bez ikakve boje, kakav se moze cuti iz
+laboratorijskog zvucnog generatora ili, priblizno, iz flaute u visokom registru. Realni muzicki
+instrumenti nikada ne proizvode ciste sinusoide; njihov zvuk je slozeniji, sto vodi ka pojmu
+tembra.
+
+3.3 Stojei talasi i rezonancija
+
+Kada se zica gitare ili klavira trzne, nastali talas putuje do fiksiranog kraja zice, gde se odbija i
+vraa nazad. Na drugom kraju se ponovo odbija, i tako dalje. Na zici istovremeno postoje talasi
+koji se kreu u oba smera. Ovi nasuprotni talasi se superpozicijom kombinuju i, pod odreenim
+uslovima, formiraju stojei talas: obrazac vibracija koji izgleda kao da stoji u mestu, umesto
+da putuje duz zice.
+
+Uslov za formiranje stojeeg talasa na zici duzine L sa oba kraja fiksirana glasi:
+
+                                        L = n · /2, n = 1, 2, 3, ...
+odnosno, duzina zice mora biti jednaka celom broju polutalasnih duzina. Iz ovog uslova sledi
+da samo odreene, diskretne talasne duzine mogu da postoje na datoj zici:
+
+                                 n = 2L/n
+
+a odgovarajue frekvencije su:
+
+                                            fn = n · v/(2L) = n · f
+gde je f = v/(2L) najniza mogua frekvencija, takozvani osnovni ton ili prvi harmonik. Sve
+vise frekvencije su celobrojni visekratnici osnovnog tona: 2f, 3f, 4f, itd. Ovo je rezultat od
+izuzetnog znacaja: fizika zice sa fiksiranim krajevima sama proizvodi celobrojne odnose,
+upravo one iste odnose koje su Pitagorejci otkrili na monohordu.
+
+Na sledeoj slici prikazana su prva cetiri moda vibriranja zice:
+
+                                 13
+                                        Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+     Slika 3: Stojei talasi na zici fiksirane duzine L. Crne tacke oznacavaju cvorove (mesta nulte amplitude).
+
+Tacke na zici koje se ne pomeraju nazivaju se cvorovi (nodes), a tacke maksimalnog pomeranja
+trbusi (antinodes). Za n-ti harmonik postoji n + 1 cvorova (ukljucujui krajeve) i n trbusa.
+
+Rezonancija je pojava u kojoj se amplituda vibriranja sistema naglo poveava kada je
+frekvencija pobude jednaka nekoj od sopstvenih frekvencija sistema. Zica ima beskonacno
+mnogo sopstvenih frekvencija (f, 2f, 3f, ...), i svaka od njih odgovara jednom stojeem talasu.
+Kada trzamo zicu, u njoj se istovremeno pobuuju svi modovi vibriranja cije su frekvencije
+bliske spektru pobude. Rezultujui zvuk je superpozicija svih ovih harmonika, a ne samo
+osnovnog tona.
+
+3.4 Obertonski niz
+
+Niz frekvencija f, 2f, 3f, 4f, ... koji prirodno nastaje na vibrirajuoj zici naziva se obertonski
+niz (ili harmonicki niz). Svaki clan niza naziva se harmonik: f je prvi harmonik (osnovni
+ton), 2f je drugi harmonik (prvi oberton), 3f je trei harmonik (drugi oberton), itd.
+
+Muzicki intervali izmeu uzastopnih harmonika su:
+
+Harmonik  Frekvencija  Odnos sa preth.   Interval     Ton (za C)
+     1.         f               /       osnovni ton        C
+     2.         2f             2/1                         C
+     3.         3f             3/2         oktava          G
+     4.         4f             4/3      cista kvinta       C
+                                        cista kvarta
+
+                       14
+             Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+5.  5f  5/4  velika terca                                                 E
+
+6.  6f  6/5  mala terca                                                   G
+
+7.  7f  7/6  (septimalna terca)                                           ~B
+
+8.  8f  8/7  (septimalna sekunda)                                         C
+
+    Tabela 3: Prvih osam harmonika i intervali izmeu uzastopnih clanova.
+
+         Slika 4: Obertonski niz, prvih osam harmonika tona C sa intervalima od prethodnog harmonika.
+
+Ova tabela otkriva nesto izuzetno: pitagorejski intervali (oktava, kvinta, kvarta) javljaju se kao
+odnosi izmeu najnizih harmonika, dok se ciste terce (5/4 i 6/5) javljaju nesto vise u nizu. Sto
+su harmonici visi, intervali izmeu njih postaju manji i sve slozeniji. Sedmi harmonik, na
+primer, daje odnos 7/6 koji nema ekvivalent u standardnom muzickom sistemu, pa se u tabeli
+navodi u zagradi.
+
+Obertonski niz pruza fizicko objasnjenje Pitagorinog otkria: razlog zasto jednostavni razlomci
+zvuce prijatno jeste to sto oni ve postoje u svakom tonu koji cujemo. Kada zazvuci ton C, sa
+njim istovremeno zvuce i visi C (oktava), G (kvinta), sledei C (druga oktava), E (terca), i tako
+dalje. Konsonantni intervali su oni kod kojih se obertoni dva tona poklapaju, dok kod
+disonantnih intervala obertoni meusobno interferiraju na neprijatan nacin.
+
+3.5 Tembr
+
+Ako flauta, violina i truba odsviraju isti ton (recimo A = 440 Hz), sve tri proizvode zvuk iste
+visine, a ipak cujemo jasnu razliku. Ono sto ih razlikuje jeste tembr (boja zvuka), a tembr je
+odreen rasporedom i relativnim amplitudama harmonika u obertonskom nizu.
+
+Svaki muzicki instrument proizvodi osnovni ton frekvencije f zajedno sa nizom visih
+harmonika (2f, 3f, ...), ali se instrumenti razlikuju po tome koliko je jak svaki od tih harmonika.
+Flauta proizvodi zvuk u kome dominira osnovni ton, sa veoma slabim visim harmonicima, te
+njen zvuk zvuci blisko sinusoidi, cisto i prozracno. Violina, nasuprot tome, ima bogat spektar
+
+                                                                  15
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+sa jakim visim harmonicima, sto joj daje karakteristicnu toplinu i punou. Klarinet, kao
+instrument sa cilindricnom cevi zatvorenom na jednom kraju, proizvodi pretezno neparne
+harmonike (3f, 5f, 7f), sto njegovom zvuku daje karakteristicnu supljinu u donjem registru.
+Herman fon Helmholc je 1863. godine u delu Die Lehre von den Tonempfindungen (O
+oseajima tona) prvi sistematski opisao ovu vezu izmeu harmonickog spektra i boje zvuka.
+Helmholcov zakljucak, koji je od tada visestruko potvren, glasi: dva zvuka iste visine zvuce
+razlicito iskljucivo zato sto se razlikuju po distribuciji energije meu harmonicima.
+Matematicki formalan opis ove veze omoguava Furijeov red, koji razlaze slozen talasni oblik
+na sinusoidne komponente.
+Iz fizicke perspektive, tembr je posledica konkretnog oblika vibrirajueg tela: debljine i
+materijala zice, oblika rezonantne kutije, nacina pobuivanja (trzanje, prevlacenje gudalom,
+udaranje cekiem). Svi ovi faktori odreuju pocetne uslove i granicne uslove talasne jednacine,
+a time i relativne amplitude harmonika u obertonskom nizu.
+
+4. Konsonanca i disonanca
+
+Ako dva tona odsviramo istovremeno, rezultat moze zvucati prijatno, stabilno i skladno, ili
+napeto, nestabilno i grubo. U prvom slucaju govorimo o konsonanci, u drugom o disonanci.
+Ova razlika je jedan od temelja muzicke harmonije, i njeno objasnjenje zahteva kombinaciju
+matematike, fizike i psihoakustike.
+
+4.1 Matematicki kriterijum: periodicnost zbira talasa
+
+Kada dva tona frekvencija f i f zvuce istovremeno, rezultujui zvucni talas jednak je zbiru dva
+sinusoidna talasa. Kljucno pitanje glasi: koliko brzo se ovaj kombinovani obrazac ponavlja?
+Neka su frekvencije dva tona u odnosu f/f = p/q, gde su p i q uzajamno prosti pozitivni celi
+brojevi (nesvodljiv razlomak). Tada se kombinovani talas periodicno ponavlja sa periodom:
+
+                                              T = 1 / NZD(f, f)
+Za to vreme, visi ton napravi tacno p potpunih ciklusa, a nizi ton napravi tacno q ciklusa. Period
+kombinovanog talasa je najmanji zajednicki period oba pojedinacna talasa.
+Razmotrimo konkretan primer: kvintu. Ako nizi ton ima frekvenciju 200 Hz, visi ton ima 300
+Hz (odnos 3/2). Kombinovani talas ponavlja se sa periodom T = 1/100 s = 0.01 s, jer je
+NZD(200, 300) = 100. Za tih 0.01 sekundi, nizi ton napravi 2 ciklusa (200 × 0.01 = 2), a visi
+
+                                                                  16
+                                      Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+napravi 3 ciklusa (300 × 0.01 = 3). Rezultat je kratak, pravilan obrazac koji se ponavlja 100
+puta u sekundi. Uho ga registruje kao stabilan, prijatan zvuk.
+
+Za poreenje, uzmimo malu sekundu (odnos 16/15). Za tonove od 240 Hz i 256 Hz, NZD iznosi
+16, pa je period kombinovanog talasa T = 1/16 s = 0.0625 s. Za to vreme, visi ton napravi 16
+ciklusa, a nizi 15. Obrazac koji se ponavlja znatno je duzi i slozeniji, a uho ga registruje kao
+napet i hrapav zvuk.
+
+Ovo navodi na sledei zakljucak: sto su brojevi p i q u nesvodljivom razlomku manji,
+kombinovani talas se ponavlja brze i pravilnije, a interval zvuci konsonantnije. Sledea
+tabela ilustruje ovu zakonitost:
+
+Interval        Odnos frekv.     p+q  Ciklusi  Percepcija
+
+Oktava          2/1              3    2+1      savrsena konson.
+
+Cista kvinta    3/2              5    3+2      savrsena konson.
+
+Cista kvarta    4/3              7    4+3      savrsena konson.
+
+Velika terca    5/4              9    5+4      nesavrsena konson.
+
+Mala terca      6/5              11   6+5      nesavrsena konson.
+
+Velika sekunda  9/8              17   9+8      disonanca
+
+Mala sekunda    16/15            31   16 + 15  ostra disonanca
+
+Tabela 4: Intervali rangirani po konsonantnosti. Zbir p + q raste sa porastom disonance.
+
+Obrazac iz tabele je jasan: zbir p + q raste kako interval postaje disonantniji. Oktava (p + q =
+3) je najkonsonantnija, mala sekunda (p + q = 31) najdisonantnija. Ovaj kriterijum, koji
+konsonantnost povezuje sa jednostavnosu numerickog odnosa, u sustini je matematicka
+
+formulacija Pitagorinog otkria.
+
+4.2 Fizicki kriterijum: slaganje harmonika
+
+Matematicki kriterijum periodicnosti objasnjava kako se konsonanca manifestuje u talasnom
+obliku, ali ne objasnjava zasto uho reaguje upravo na taj nacin. Odgovor na to pitanje dao je
+Herman fon Helmholc u drugoj polovini devetnaestog veka, i on pociva na pojmu udara
+(beats).
+
+Kada dva tona imaju bliske, ali ne identicne frekvencije, njihov zbir osciluje izmeu
+pojacavanja i ponistavanja. Rezultat je periodicna promena glasnoe cija frekvencija iznosi:
+
+                                                f = |f - f|
+
+                                 17
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+Ako je razlika frekvencija mala (recimo 2 ili 3 Hz), cujemo sporo pulsiranje, takozvane udare.
+Ovo je fenomen koji koriste muzicari pri finoj korekciji ugaanja: kad se dva tona postepeno
+priblizavaju istoj frekvenciji, udari se usporavaju i na kraju nestaju.
+Helmholcovo kljucno zapazanje bilo je sledee: kada frekvencija udara poraste na oko 20 do
+50 Hz, umesto ritmicnog pulsiranja cuje se neprijatan, grub zvuk koji se u akustici naziva
+hrapavost (roughness). Upravo ta hrapavost jeste ono sto dozivljavamo kao disonancu.
+Ali dva tona koja zajedno zvuce u muzici nisu ciste sinusoide. Svaki ton sadrzi citav niz
+harmonika (2f, 3f, 4f, ...), jer svaki instrument proizvodi citav obertonski niz. Zato hrapavost ne
+nastaje samo izmeu osnovnih tonova, ve i izmeu svih parova harmonika oba tona koji su
+dovoljno bliski po frekvenciji.
+Za konsonantne intervale, harmonici dva tona se ili tacno poklapaju, ili su dovoljno razdvojeni
+da ne proizvode hrapavost. Razmotrimo kvintu (3/2): ako je nizi ton C sa harmonicima f, 2f,
+3f, 4f, 5f, 6f, ..., a visi ton G sa harmonicima 3f/2, 3f, 9f/2, 6f, ..., vidimo da se trei harmonik
+tona C (3f) poklapa sa drugim harmonikom tona G (3f), sesti sa cetvrtim (6f), i tako dalje.
+Veliko poklapanje harmonika daje utisak srodnosti i stabilnosti.
+Za disonantne intervale, mnogi parovi harmonika su bliski ali se ne poklapaju, te proizvode
+udare u zoni hrapavosti. Mala sekunda (16/15) je izrazit primer: gotovo svaki par harmonika je
+dovoljno blizu da stvara hrapavost, a nijedan par se ne poklapa savrseno.
+Helmholcova teorija, dakle, objasnjava konsonancu kroz dva mehanizma: podudaranje
+harmonika (koje pojacava utisak srodnosti tonova) i odsustvo hrapavosti (koje eliminise
+neprijatan senzorni utisak). Intervali koji ostvaruju oboje su konsonantni, dok su intervali kod
+kojih su harmonici bliski ali nepodudrani disonantni.
+
+4.3 Granice matematickog objasnjenja
+
+Periodicnost zbira talasa i Helmholcova teorija hrapavosti pruzaju ubedljivo objasnjenje
+konsonance, ali ne iscrpljuju pitanje u potpunosti. Konsonanca i disonanca imaju i dimenziju
+koja izlazi izvan ciste matematike i fizike.
+Prvo, percepcija konsonance delimicno je kulturno uslovljena. Intervali koji u jednoj muzickoj
+tradiciji vaze za disonantne, u drugoj mogu biti sasvim prihvatljivi. Sekunda, na primer, u
+klasicnoj harmoniji vazi za disonancu, dok je u bluz tonalitetu sastavni deo idioma. Evolucija
+muzickog ukusa kroz vekove takoe potvruje da se granica izmeu konsonance i disonance
+
+                                                                  18
+                                         Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+pomera: terca je u srednjovekovnoj muzici tretirana kao disonanca, dok u modernoj harmoniji
+vazi za osnovni konsonantni interval.
+
+Drugo, percepcija zavisi od muzickog konteksta. Disonanca koja bi izolovano zvucala
+neprijatno moze u kontekstu muzickog dela zvucati izrazajno, napeto i umetnicki opravdano.
+Akord sa dodatom septimom (koji sadrzi malu sekundu izmeu septimne note i oktave)
+klasifikuje se kao disonanca, ali je upravo ta disonanca ono sto daje dzez harmoniji njen
+prepoznatljiv karakter.
+
+Tree, postoji i neurofizioloska dimenzija koju ni pitagorejski razlomci ni Helmholcova
+hrapavost ne pokrivaju u potpunosti. Moderna istrazivanja u oblasti psihoakustike i kognitivne
+neuronauke ukazuju na to da mozak obrauje muzicke intervale na visem nivou od prostog
+frekvencijskog poreenja, ukljucujui ocekivanja, memoriju i emocionalne asocijacije.
+
+Matematika, prema tome, objasnjava neophodan uslov konsonance (jednostavan odnos
+frekvencija, odsustvo hrapavosti), ali ne i dovoljan. Konsonanca je fenomen na preseku fizike,
+fiziologije i kulture. Ovaj rad se usredsreuje na matematicki i fizicki aspekt, sa svesu da
+kompletno objasnjenje zahteva siri pristup.
+
+5. Temperovano ugaanje i logaritamska skala
+
+Pitagorejska koma pokazuje da sistem ugaanja zasnovan iskljucivo na cistim kvintama ne
+moze da zatvori krug dvanaest tonova. Svaki pokusaj da se sacuvaju savrseni razlomci
+neizbezno ostavlja jedan interval koji zvuci pogresno. Tokom vekova, razni sistemi ugaanja
+pokusavali su da rasporede ovu gresku na manje bolan nacin, sve dok se u osamnaestom veku
+nije ustalilo resenje koje je matematicki najelegantnije: jednako temperovano ugaanje.
+
+5.1 Definicija temperovanog polustepena
+
+Ideja jednako temperovanog ugaanja je jednostavna: podeliti oktavu na dvanaest potpuno
+jednakih polustepena. Posto je oktava definisana kao udvostrucenje frekvencije (odnos 2/1),
+svaki polustepen mora imati isti mnozilac q takav da dvanaest uzastopnih primena tog mnozioca
+daje tacno oktavu:
+
+                          q¹² = 2
+
+Odavde neposredno sledi:
+
+                          q = ¹²2 = 2¹/¹²  1.05946
+
+                          19
+                                       Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+Svaki polustepen u temperovanom sistemu mnozi frekvenciju prethodnog tona sa istim
+faktorom q  1.05946. Frekvencija tona koji se nalazi n polustepena iznad referentnog tona
+frekvencije f iznosi:
+
+                                                  f = f · 2/¹²
+Na primer, ton A = 440 Hz sluzi kao univerzalni referentni ton. Ton E, koji je 7 polustepena
+iznad A, ima temperovanu frekvenciju:
+
+                               f = 440 · 2/¹² = 440 · 1.4983  659.26 Hz
+Uporedimo ovo sa cistom kvintom: 440 · 3/2 = 660.00 Hz. Razlika je manja od jednog herca,
+gotovo necujna. Upravo u tome lezi snaga temperovanog sistema: on ne daje savrsene intervale,
+ali daje dovoljno bliske aproksimacije svih intervala, i to jednako dobre u svim tonalitetima.
+
+5.2 Dokaz iracionalnosti temperovanog polustepena
+
+Teorema. Broj ¹²2 je iracionalan.
+
+Dokaz. Pretpostavimo suprotno, da je ¹²2 racionalan, tj. da postoje pozitivni celi brojevi p i q
+(uzajamno prosti) takvi da vazi ¹²2 = p/q. Stepenujemo obe strane na dvanaesti stepen:
+
+                                   2 = p¹² / q¹²
+
+odnosno:
+
+                                                  p¹² = 2 · q¹²
+Iz ove jednakosti sledi da je p¹² paran broj, jer je deljiv sa 2. Posto je p¹² paran, sam p mora biti
+paran (neparan broj stepenovan na bilo koji stepen ostaje neparan). Dakle, p = 2k za neki
+pozitivan ceo broj k. Uvrstavamo:
+
+                                                (2k)¹² = 2 · q¹²
+                                               2¹² · k¹² = 2 · q¹²
+
+                                                 2¹¹ · k¹² = q¹²
+Iz poslednje jednakosti sledi da je q¹² deljiv sa 2¹¹, pa je i sam q paran. Ali p i q su po
+pretpostavci uzajamno prosti, sto znaci da ne mogu oba biti parni. Kontradikcija. Dakle, ¹²2 je
+iracionalan.
+
+Ovaj rezultat ima dalekosezan znacaj. Nijedan temperovani interval (osim oktave) ne moze se
+izraziti kao razlomak celih brojeva. Cista kvinta 3/2, cista kvarta 4/3, cista terca 5/4 ne postoje
+u temperovanom sistemu. Umesto njih postoje bliske aproksimacije cije su vrednosti
+iracionalne. Pitagorejski ideal harmonije zasnovane na celim brojevima morao je biti napusten
+da bi se dobio sistem u kome svi tonaliteti zvuce jednako.
+
+                                   20
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+5.3 Logaritamska priroda muzicke visine
+
+Jednako temperovano ugaanje namee pitanje: zasto su jednaki mnozioci (a ne jednake razlike)
+frekvencija ono sto uho dozivljava kao jednake korake? Odgovor lezi u nacinu na koji ljudski
+nervni sistem obrauje senzorne nadrazaje.
+Ernst Veber je 1834. godine formulisao zakonitost koja se danas naziva Veberov zakon: da bi
+se primetila razlika izmeu dva nadrazaja, novi nadrazaj mora biti za odreen procenat vei od
+prethodnog, ne za odreen apsolutni iznos. Za zvuk, to znaci da uho reaguje na odnos
+frekvencija, a ne na njihovu razliku.
+Matematicka posledica ovoga je da je percepcija muzicke visine logaritamska funkcija
+frekvencije. Ako oznacimo percipiranu visinu tona sa h, vazi:
+
+                                                h = log(f / f)
+gde je f neka referentna frekvencija. Ova relacija znaci da su tonovi razdvojeni istim odnosom
+frekvencija percipirani kao jednako udaljeni, bez obzira na apsolutne frekvencije. Oktava od
+100 do 200 Hz i oktava od 1000 do 2000 Hz imaju isti percipirani razmak, jer je u oba slucaja
+log(f/f) = 1.
+Temperovano ugaanje je, u sustini, primena ove logaritamske zakonitosti na konstrukciju
+tonske skale: dvanaest jednakih koraka na logaritamskoj skali frekvencija.
+
+5.4 Merna jedinica cent
+
+Za precizno merenje muzickih intervala koristi se jedinica cent, definisana tako da jedna oktava
+sadrzi tacno 1200 centi, a svaki temperovani polustepen tacno 100 centi. Formalno, interval sa
+odnosom frekvencija r iznosi:
+
+                                              n = 1200 · log(r)
+Izvedimo ovu formulu. Jedan cent odgovara frekvencijskom mnoziocu od 2¹/¹², jer je oktava
+(faktor 2) podeljena na 1200 delova. Ako interval ima n centi, odgovarajui mnozilac je 2/¹²
+= r. Logaritmovanjem za osnovu 2:
+
+                                               n/1200 = log(r)
+odakle sledi n = 1200 · log(r). Za prakticno izracunavanje, koristei promenu osnove
+logaritma:
+
+                           n = 1200 · ln(r) / ln(2)  1200 · log(r) / 0.30103
+
+                                                                  21
+                                       Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+Cent je dovoljno fina jedinica za prakticnu upotrebu: razlika od 1 centa iznosi svega 0.058%
+frekvencije, sto je znatno ispod praga cujnosti za veinu slusalaca (koji iznosi oko 5 centi u
+srednjem registru).
+
+5.5 Poreenje sistema ugaanja
+
+Koliko se temperovani intervali razlikuju od cistih? Sledea tabela daje odgovor izrazen u
+centima za tri sistema: pitagorejski (zasnovan na kvintama, prosti brojevi 2 i 3), cisto ugaanje
+(prosti brojevi 2, 3 i 5) i jednako temperovano:
+
+Interval      Pitag. (ct)  Temp. (ct)  Cisto (ct)  temp-pit  temp-cist
+
+Vel. sekunda  203.91       200.00      203.91   -3.91  -3.91
+
+Vel. terca    407.82       400.00      386.31   -7.82  +13.69
+
+C. kvarta     498.04       500.00      498.04   +1.96  +1.96
+
+C. kvinta     701.96       700.00      701.96   -1.96  -1.96
+
+Vel. seksta   905.87       900.00      884.36   -5.87  +15.64
+
+Vel. septima  1109.78      1100.00     1088.27  -9.78  +11.73
+
+Tabela 5: Poreenje pitagorejskog, temperovanog i cistog ugaanja. Razlike su date u centima.
+
+                  Slika 5: Vizuelno poreenje tri sistema ugaanja za sedam intervala durske skale.
+
+Iz tabele i grafika mogu se izvui dva kljucna zakljucka.
+Prvo, temperovane kvinta i kvarta gotovo su identicne cistim: razlika iznosi svega 1.96 centa u
+oba slucaja, sto je daleko ispod praga cujnosti. Ovo objasnjava zasto je temperovano ugaanje
+muzicki prihvatljivo: dva najvaznija intervala posle oktave prakticno su netaknuta.
+Drugo, najvee odstupanje nastaje kod terce: temperovana velika terca visa je za 13.69 centi od
+ciste terce (5/4). Ova razlika je cujna i upravo ona daje temperovanim akordima blago napetu,
+
+                                                                  22
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+lebdei kvalitet koji ih razlikuje od savrseno cistih sazvucja. Pri tome, pitagorejska terca (81/64
+= 407.82 ct) je jos udaljenija od ciste, za citavih 21.51 cent.
+Temperovano ugaanje, dakle, predstavlja kompromis. Nijedan interval nije savrsen, ali su svi
+dovoljno dobri, i sto je kljucno, jednako dobri u svim tonalitetima. Kompozitor koji pise u Fis-
+duru nema nikakvo ogranicenje u odnosu na onoga koji pise u C-duru. Za pitagorejski ili cist
+sistem to ne vazi: pomeranje u udaljene tonalitete dovodi do akumulacije gresaka koje cine neke
+tonalitete neupotrebljivim.
+
+6. Furijeova analiza
+
+Obertonski niz pokazuje da svaki muzicki ton sadrzi osnovnu frekvenciju i citav niz visih
+harmonika. Postavlja se pitanje: postoji li matematicki formalan nacin da se slozen talasni oblik
+razdvoji na sastavne sinusoidne komponente? Odgovor je dao francuski matematicar Zan-
+Baptist Zozef Furije (Jean-Baptiste Joseph Fourier, 1768-1830), i taj odgovor spada meu
+najznacajnije rezultate matematicke analize.
+
+6.1 Furijeova teorema
+
+Furijeova teorema tvrdi da se svaka periodicna funkcija f(t) sa periodom T moze zapisati kao
+zbir (potencijalno beskonacno mnogo) sinusoidnih funkcija cije su frekvencije celobrojni
+visekratnici osnovne frekvencije f = 1/T:
+
+                            f(t) = a/2 +  [a cos(2nt/T) + b sin(2nt/T)]
+gde sumacija ide po n = 1, 2, 3, ... Koeficijenti a i b jednoznacno su odreeni samom
+funkcijom f(t) i izracunavaju se pomou integrala:
+
+                                       a = (2/T)  f(t) cos(2nt/T) dt
+                                       b = (2/T)  f(t) sin(2nt/T) dt
+gde se integracija vrsi po jednom punom periodu. Clan a/2 predstavlja srednju vrednost
+funkcije (u akustici: jednosmernu komponentu signala, koja za zvuk tipicno iznosi nula).
+Koeficijenti a i b odreuju amplitudu i fazu n-tog harmonika.
+Teorema vazi pod takozvanim Dirihleovim uslovima: funkcija mora biti periodicna, po
+delovima neprekidna i imati konacan broj ekstrema u jednom periodu. Svi fizicki relevantni
+zvucni talasi zadovoljavaju ove uslove, pa se Furijeov red moze primeniti na bilo koji muzicki
+ton.
+
+                                                                  23
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+Ekvivalentan, i za muzicku primenu pregledniji, zapis koristi amplitudu i fazu umesto
+kosinusnih i sinusnih koeficijenata:
+
+                                     f(t) = A +  A sin(2nft + )
+gde je A amplituda n-tog harmonika, a  njegova faza. U ovom zapisu, muzicki ton je potpuno
+opisan nizom parova (A, ) za n = 1, 2, 3, ... Amplituda A odreuje koliko je jak n-ti harmonik,
+a faza  odreuje gde u ciklusu taj harmonik pocinje.
+
+6.2 Furijeova sinteza i analiza
+
+Furijeov red se moze citati u oba smera. Furijeova sinteza je postupak u kome se od
+sinusoidnih komponenti poznate frekvencije i amplitude gradi slozen talasni oblik. Furijeova
+analiza je obrnuti postupak: od datog slozenog talasnog oblika izracunavaju se koeficijenti koji
+pokazuju koliko je svaka sinusoidna komponenta zastupljena.
+Sledea slika ilustruje Furijeovu sintezu: tri harmonika (osnovni ton sa amplitudom 1.0, drugi
+harmonik sa amplitudom 0.5 i trei sa amplitudom 0.33) sabiraju se u slozen talasni oblik koji
+vise ne lici na sinusoidu.
+
+          Slika 6: Furijeova sinteza. Tri sinusoidna talasa razlicitih frekvencija sabiraju se u slozen oblik.
+
+Sto se vise harmonika doda, rezultujui oblik postaje sve slozeniji. Teorijski, beskonacno
+mnogo harmonika sa amplitudama A = 1/n daje testerast talasni oblik (sawtooth wave), dok
+harmonici A = 1/n samo za neparne n daju pravougaoni talas (square wave). Ove cinjenice
+
+                                                                  24
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+potvruju da talasni oblik i harmonicki sadrzaj nose istu informaciju, samo u razlicitim
+predstavama.
+
+6.3 Spektar
+
+Graficki prikaz amplituda svih harmonika naziva se frekvencijski spektar ili jednostavno
+spektar. Na horizontalnoj osi prikazane su frekvencije (ili redni brojevi harmonika), a na
+vertikalnoj osi njihove amplitude. Spektar sadrzi sve informacije o boji zvuka jednog tona.
+Razliciti instrumenti imaju bitno razlicite spektre cak i kada sviraju isti ton. Flauta ima spektar
+u kome dominira osnovni ton, sa veoma slabim visim harmonicima. Violina ima mnogo
+ravnomerniji spektar, sa jakim drugog, treeg, pa i cetvrtog harmonika. Klarinet, zbog
+cilindricne cevi zatvorene na jednom kraju, proizvodi pretezno neparne harmonike (1., 3., 5.,
+7., ...), dok su parni harmonici (2., 4., 6., ...) izrazito slabi.
+
+       Slika 7: Uporedni spektri flaute, violine i klarineta. Klarinet ima karakteristicno dominantne neparne
+                                                             harmonike.
+
+Spektar je matematicka potvrda Helmholcovog zakljucka: razlika u boji zvuka izmeu
+instrumenata svodi se na razliku u distribuciji energije meu harmonicima. Furijeov red daje
+formalan okvir za ovu tvrdnju: dva tona iste frekvencije zvuce razlicito ako i samo ako se
+razlikuju po koeficijentima A u svom Furijeovom razvoju.
+
+6.4 Primena u digitalnoj obradi zvuka
+
+Furijeova analiza nije samo teorijski rezultat. Ona je osnova citave moderne obrade zvuka. Brza
+Furijeova transformacija (FFT, Fast Fourier Transform) omoguava racunarima da u realnom
+vremenu izracunaju spektar zvucnog signala. Primene ukljucuju:
+Digitalni ekvilajzeri koriste Furijeovu transformaciju da razdvoje signal na frekvencijske
+opsege, pojacaju ili utisaju odreene harmonike, i zatim rekombinuju signal. Softverski
+sintesajzeri generisu zvuk aditivnom sintezom, sabirajui sinusoidne komponente sa precizno
+
+                                                                  25
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+kontrolisanim amplitudama i fazama. Algoritmi za kompresiju zvuka (poput MP3 formata)
+koriste Furijeovu analizu da identifikuju komponente koje ljudsko uho ne moze da cuje, i zatim
+ih uklone da bi smanjili velicinu fajla.
+Sve ove primene direktno pocivaju na Furijeovoj teoremi: svaki zvuk se moze razloziti na
+sinusoide, obraditi komponentu po komponentu, i ponovo sastaviti.
+
+7. ANALIZA C-DUR AKORDA
+
+Svi do sada izlozeni matematicki i fizicki koncepti mogu se primeniti na analizu jednog
+konkretnog muzickog primera. C-dur akord, sastavljen od tonova C, E i G, jedan je od
+najosnovnijih akorda u muzici i pruza idealan test za proveru konzistentnosti razlicitih sistema
+ugaanja.
+
+7.1 Frekvencije tonova C-dur akorda
+Za izracunavanje temperovanih frekvencija koristi se referentni ton A = 440 Hz i formula f =
+440 · 2/¹², gde n predstavlja broj polustepena iznad (pozitivno) ili ispod (negativno) tona A.
+Ton C se nalazi 9 polustepena ispod A (A  G  G  F  F  E  D  D 
+C  C). Prema tome:
+
+                              f = 440 · 2/¹² = 440 · 0.5946  261.63 Hz
+Ton E se nalazi 5 polustepena ispod A:
+
+                              f = 440 · 2/¹² = 440 · 0.7492  329.63 Hz
+Ton G se nalazi 2 polustepena ispod A:
+
+                              f = 440 · 2²/¹² = 440 · 0.8909  392.00 Hz
+7.2 Temperovani odnosi unutar akorda
+Odnosi frekvencija izmeu tonova C-dur akorda u temperovanom sistemu iznose:
+Velika terca (C  E): f/f = 329.63/261.63 = 2/¹²  1.2599
+Cista kvinta (C  G): f/f = 392.00/261.63 = 2/¹²  1.4983
+Mala terca (E  G): f/f = 392.00/329.63 = 2³/¹²  1.1892
+Nijedan od ovih odnosa nije razlomak celih brojeva. Sva tri su iracionalni brojevi oblika 2/¹²,
+sto je neizbezna posledica temperovanog sistema.
+
+7.3 Poreenje sa cistim intervalima
+
+                                                                  26
+                                  Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+U cistom ugaanju, isti intervali imali bi vrednosti: velika terca 5/4 = 1.2500, cista kvinta 3/2
+= 1.5000, mala terca 6/5 = 1.2000. Odstupanja temperovanih intervala od cistih iznose:
+
+Interval         Temperovano      Cisto         Razlika (ct)                   Cujnost
+                                                                                cujna
+Vel. terca (CE)  1.2599           5/4 = 1.2500  +13.69                         necujna
+                                                                                cujna
+C. kvinta (CG)   1.4983           3/2 = 1.5000  -1.96
+
+M. terca (EG)    1.1892           6/5 = 1.2000  -15.64
+
+          Tabela 6: Odstupanja temperovanih intervala C-dur akorda od cistih.
+
+Iz tabele proizlaze dva zakljucka. Prvo, temperovana kvinta gotovo je identicna cistoj:
+odstupanje od 1.96 centa daleko je ispod praga cujnosti (oko 5 centi). Struktura akorda u
+pogledu kvinte prakticno je netaknuta temperovanjem.
+
+Drugo, obe terce pokazuju znacajna odstupanja. Velika terca je za 13.69 centi sira od ciste, a
+mala terca za 15.64 centi uza. Ova dva odstupanja su komplementarna: njihov zbir (13.69 +
+15.64 = 29.33 ct) priblizno odgovara razlici izmeu temperovane i ciste kvinte pomnozene sa
+odgovarajuim faktorom. Temperovani C-dur akord, dakle, sadrzi tercu koja je primetno sira i
+malu tercu koja je primetno uza nego sto bi bile u cistom ugaanju.
+
+7.4 Obertonsko objasnjenje sklada C-dur akorda
+Razlog zasto C-dur akord zvuci skladno moze se objasniti slaganjem obertona tri tona. Osnovne
+frekvencije su f  261.63 Hz, f  329.63 Hz i f  392.00 Hz. Obertoni svakog tona su
+celobrojni visekratnici osnovne frekvencije:
+
+Obertoni tona C: 261.63, 523.25, 784.88, 1046.50, 1308.13, 1569.75, ...
+
+Obertoni tona E: 329.63, 659.26, 988.88, 1318.51, 1648.14, ...
+
+Obertoni tona G: 392.00, 784.00, 1176.00, 1568.00, ...
+
+Poreenjem ovih nizova uocavaju se bliska poklapanja: trei harmonik tona C (784.88 Hz)
+gotovo se poklapa sa drugim harmonikom tona G (784.00 Hz), razlika iznosi manje od 1 Hz.
+Peti harmonik tona C (1308.13 Hz) blizak je cetvrtom harmoniku tona E (1318.51 Hz). Sesti
+harmonik tona C (1569.75 Hz) gotovo se poklapa sa cetvrtim harmonikom tona G (1568.00
+Hz).
+
+Upravo ova poklapanja obertona daju C-dur akordu njegov karakteristican sklad. Sto se vise
+obertona poklapa, akord zvuci stabilnije i punije. C-dur akord sadrzi kvintu (ciji se obertoni
+izuzetno dobro poklapaju) i tercu (ciji obertoni pokazuju manje ali i dalje znacajno poklapanje),
+sto ga cini jednim od najkonsonantnijih akorda u muzici.
+
+                              27
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+7.5 Furijeova reprezentacija C-dur akorda
+Iz perspektive Furijeove analize, C-dur akord se moze zapisati kao zbir tri obertonska niza:
+
+           y(t) =  A sin(2 · nf · t) +  A sin(2 · nf · t) +  A sin(2 · nf · t)
+gde sumacija po n ide od 1 do beskonacnosti (u praksi, do onog reda harmonika cija amplituda
+padne ispod praga cujnosti). Koeficijenti A, A i A zavise od instrumenta na kome se akord
+izvodi. Na klaviru, koeficijenti opadaju priblizno kao 1/n, dok na orguljama profil moze biti
+sasvim drugaciji.
+Spektar C-dur akorda, dakle, nije kontinualan, ve se sastoji od tri diskretna niza harmonika,
+po jedan za svaki ton akorda. Tamo gde se harmonici dva ili tri tona poklapaju (ili su blizu),
+dolazi do konstruktivne interferencije koja pojacava ukupnu amplitudu na toj frekvenciji. Tamo
+gde su harmonici bliski ali se ne poklapaju, nastaju udari cija frekvencija odreuje stepen
+hrapavosti (disonance) na toj frekvenciji.
+Analiza C-dur akorda tako objedinjuje sve koncepte izlozene u radu: pitagorejske razlomke,
+temperovane iracionalne odnose, fiziku stojeih talasa i obertonskog niza, Helmholcovu teoriju
+konsonance i Furijeovu dekompoziciju slozenog signala.
+
+8. ZAKLJUCAK
+
+Ovaj rad analizirao je matematicku osnovu muzicke harmonije kroz tri meusobno povezana
+aspekta: teoriju brojeva, fiziku zvuka i analizu signala.
+Pokazano je da pitagorejski intervali (oktava 2/1, kvinta 3/2, kvarta 4/3) proizlaze iz celobrojnih
+odnosa frekvencija, a njihova konsonantnost ima fizicko utemeljenje u poklapanju obertonskih
+nizova. Konstruisana je pitagorejska skala iz uzastopnih kvinti i dokazano je da se krug kvinti
+ne moze zatvoriti: ne postoje pozitivni celi brojevi m i n takvi da (3/2) = 2, jer bi to zahtevalo
+jednakost neparnog i parnog broja. Pitagorejska koma, iznosa 531441/524288  23.46 centi,
+direktna je posledica ove nesamerljivosti.
+Jednako temperovano ugaanje resava problem pitagorejske kome podelom oktave na 12
+jednakih polustepena sa mnoziocem ¹²2, cija je iracionalnost dokazana. Logaritamska funkcija
+formalizuje vezu izmeu multiplikativne prirode frekvencijskih odnosa i aditivne percepcije
+muzicke visine (Veberov zakon). Merna jedinica cent (1200 · log(r)) omoguava kvantitativno
+poreenje sistema ugaanja.
+Komparativna analiza tri sistema ugaanja (pitagorejskog, cistog i temperovanog) pokazala je
+da temperovano ugaanje predstavlja optimalan kompromis: kvinta odstupa svega 1.96 centi
+
+                                                                  28
+                                                                                 Prva kragujevacka gimnazija, Kragujevac / Sava ukovi
+
+od ciste, dok najvee odstupanje nastaje kod terce (13.69 centi). Ovi rezultati potvreni su na
+primeru C-dur akorda, gde su izracunate tacne frekvencije tonova C  261.63 Hz, E  329.63
+Hz i G  392.00 Hz, i kvantifikovana odstupanja od cistih intervala.
+Furijeova teorema dala je formalan okvir za razumevanje tembra: boja zvuka odreena je
+iskljucivo distribucijom energije meu harmonicima, sto su potvrdili i spektralni profili
+razlicitih instrumenata.
+Rezultati rada potvruju da se fenomeni muzicke harmonije mogu u potpunosti opisati
+matematickim jezikom, od pitagorejskih razlomaka do Furijeovih koeficijenata. Svaki akord
+koji cujemo sadrzi u sebi aritmetiku celih brojeva, fiziku stojeih talasa i strukturu beskonacnih
+trigonometrijskih redova.
+
+9. LITERATURA
+
+[1] Helmholtz H., On the Sensations of Tone as a Physiological Basis for the Theory of Music,
+Dover Publications, New York, 1954. (originalno izdanje: Die Lehre von den
+Tonempfindungen, 1863)
+[2] Benson D., Music: A Mathematical Offering, Cambridge University Press, Cambridge,
+2007.
+[3] Loy G., Musimathics: The Mathematical Foundations of Music, MIT Press, Cambridge MA,
+2006.
+[4] Rossing T. D., Moore F. R., Wheeler P. A., The Science of Sound (3rd edition), Addison
+Wesley, San Francisco, 2002.
+[5] Caukovi N., Fizika za prvi razred gimnazije, Zavod za udzbenike, Beograd, 2019.
+
+                                                                  29
+
