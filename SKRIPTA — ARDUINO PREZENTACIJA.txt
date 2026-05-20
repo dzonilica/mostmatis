@@ -1,0 +1,56 @@
+SKRIPTA — ARDUINO PREZENTACIJA
+
+Kolja
+
+Takmičenje Most matematike, 2026.
+Tekst u sivim okvirima su akcije — šta radiš sa uređajem. Sve ostalo izgovaraš.
+
+1. Uvod
+&quot;Uz naučni rad, napravili smo interaktivni demonstrator koji sve što Sava objašnjava u teoriji
+možete uživo da čujete.
+
+Hardver se sastoji od Arduino Mega mikrokontrolera, pasivnog bazera koji generiše precizne
+frekvencije, rotary encodera kojim biramo interval, tastera koji menja sistem ugađanja, i RGB
+LED diode koja vizuelno pokazuje da li je interval konsonanca ili disonanca.&quot;
+
+2. Encoder
+[Obrće encoder]
+
+&quot;Okretanjem ovog točkića prolazimo kroz intervale — sekunda, terca, kvarta, kvinta, pa sve
+do oktave. Čim ga obrnem, bazer odmah odsvira novi interval da se čuje kako zvuči.&quot;
+
+3. Kvinta — zelena LED
+[Obrće encoder na kvintu, klikne encoder — PLAY]
+
+&quot;Ovo je kvinta. Bazer naizmenično svira bazni ton C na 261 herca i gornji ton G na 392
+herca. Odnos tih frekvencija je tačno 3 prema 2. LED je zelena — savršena konsonanca.&quot;
+
+4. Sekunda — crvena LED
+[STOP, obrće na sekundu, PLAY]
+
+&quot;A ovo je sekunda. Odmah čujete da zvuči neprijatno. Odnos frekvencija je 9 prema 8 —
+veći brojevi, grublji zvuk. LED automatski prelazi na crvenu — disonanca.&quot;
+
+5. Terca — razlika sistema (GLAVNI DEO)
+[STOP, obrće na tercu, PLAY]
+
+&quot;Sad terca. I tu dolazimo do najzanimljivijeg dela.&quot;
+
+[Pritisne taster — menja sistem, nekoliko puta]
+
+&quot;Ovim tasterom menjam sistem ugađanja između pitagorejskog i temperovanog. U
+pitagorejskom sistemu terca je razlomak 81 prema 64. U temperovanom je iracionalan broj
+— dvanaesti koren od dva na četvrti stepen.
+
+Razlika između ta dva sistema iznosi oko 8 herca. Ako slušate pažljivo dok menjam taster,
+možete je čuti.&quot;
+
+6. Serial Monitor
+[Pokazuješ na laptop ekran]
+
+&quot;Na laptopu u realnom vremenu se ispisuju sve frekvencije, matematički odnosi i razlika
+između sistema izražena u centima — merna jedinica koju Sava objašnjava u radu.
+
+Na taj način uređaj ne samo da svira matematiku, nego je i prikazuje numerički.&quot;
+
+Ukupno trajanje: ~90 sekundi

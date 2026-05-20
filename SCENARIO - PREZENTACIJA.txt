@@ -1,0 +1,285 @@
+═══════════════════════════════════════════════════════════════════════════════
+                  MATEMATIKA MUZIČKE HARMONIJE
+                  Scenario prezentacije · Most matematike 2026
+                  Prva kragujevačka gimnazija
+═══════════════════════════════════════════════════════════════════════════════
+
+UČESNICI I REDOSLED NASTUPA:
+
+  1. UVOD ··················· Sava Čuković + Pavle Živković
+  2. PITAGORA / MONOHORD ····  Nikola Mirković   (sa gitarom)
+  3. PITAGOREJSKA SKALA ·····  Mina
+  4. TEMPEROVANO UGAĐANJE ··   Aleksandra
+  5. KONSONANCA / DISONANCA ·  Ilija
+  6. FURIJE / C-DUR AKORD ···  Bogdan
+  7. ARDUINO DEMONSTRATOR ··   Rastko + Kolja
+  8. ZAKLJUČAK ·············  Pavle Živković + Sava Čuković
+
+Pravilo: jednom kad neko počne, priča do kraja svog dela. Bez upadanja.
+Tekst u uglastim zagradama [ ovako ] su akcije — što radiš, ne što govoriš.
+Ukupno trajanje: oko 5–6 minuta.
+
+═══════════════════════════════════════════════════════════════════════════════
+                              1.  UVOD
+                          Sava Čuković + Pavle Živković
+═══════════════════════════════════════════════════════════════════════════════
+
+SAVA ČUKOVIĆ:
+
+  „Dobar dan. Pred vama je rad pod nazivom Matematika muzičke harmonije.
+  Već u šestom veku pre nove ere, Pitagora je primetio nešto naizgled
+  jednostavno — da prijatni intervali u muzici nastaju onda kada su
+  dužine žica u odnosu malih celih brojeva. Iz tog otkrića izrastao je
+  problem koji je dva milenijuma mučio matematičare: kako uskladiti
+  čistu kvintu sa oktavom. Pokazaće se da je odgovor moguć samo uz pomoć
+  logaritama i iracionalnih brojeva."
+
+PAVLE ŽIVKOVIĆ:
+
+  „U ovom radu pratimo taj put — od antičkog monohorda, preko fizike
+  vibrirajuće žice i Helmholcove teorije konsonance, do Furijeovog reda
+  koji razlaže svaki zvuk na sastavne sinusoide. Sve ono o čemu govorimo
+  ne samo da ćemo objasniti — moći ćete da čujete uživo, na uređaju koji
+  smo sami napravili. Tri formule čine kičmu ovog rada: Pitagorin
+  razlomak tri kroz dva, dvanaesti koren iz dva i Furijeov red."
+
+═══════════════════════════════════════════════════════════════════════════════
+                        2.  PITAGORA · MONOHORD · ŽICA
+                              Nikola Mirković
+                              (uzima gitaru u ruke)
+═══════════════════════════════════════════════════════════════════════════════
+
+NIKOLA MIRKOVIĆ:
+[uzme gitaru, okrene se prema publici]
+
+  „Ja u rukama imam najjednostavniji mogući monohord — žicu zategnutu
+  između dve fiksne tačke. Pitagora je svoj eksperiment radio na ovakvoj
+  jednoj žici. Kad odsviram celu, čujemo osnovni ton."
+
+[svira praznu žicu E]
+
+  „Ako tačno na polovini žice stavim prst — dvanaesti prag — dobijam
+  isti ton oktavu više. Odnos dužina jedan prema dva."
+
+[odsvira flazoletu na 12. pragu — zvoni oktava]
+
+  „Na trećini žice — to je sedmi prag — dobijam čistu kvintu. Odnos tri
+  prema dva. To je interval koji je Pitagori bio najvažniji."
+
+[odsvira flazoletu na 7. pragu]
+
+  „A na četvrtini, peti prag — dve oktave od osnovnog. Sve ono što je
+  Pitagora otkrio pre dva i po hiljade godina, žica još uvek pokazuje.
+  Ali ima još jedna stvar koja je važna: kad ja običnim trzajem odsviram
+  jedan ton, ono što čujete nije čist sinusni ton. U svakom tonu žice
+  istovremeno zvuče i oktava, i kvinta, i naredna oktava, pa terca —
+  ceo takozvani obertonski niz. Upravo zato gitara i klavir, kad odsviraju
+  isti ton, zvuče različito — razlikuje ih jačina svakog od tih obertona.
+  To se zove tembr, boja tona."
+
+═══════════════════════════════════════════════════════════════════════════════
+                       3.  PITAGOREJSKA SKALA · KOMA
+                                  Mina
+═══════════════════════════════════════════════════════════════════════════════
+
+MINA:
+
+  „Pitagorejci su iz samo dva intervala — oktave i čiste kvinte —
+  sagradili celu dursku lestvicu. Polazimo od tona C i množimo sa tri
+  kroz dva — dobijamo G. Opet tri kroz dva — dobijamo D, ali iznad
+  oktave, pa ga delimo sa dva da se vrati u opseg. Tako redom izvlačimo
+  A, E, B. Tonu F nije moguće prići kvintom naviše, pa idemo jednu
+  kvintu naniže od C. Kada se svih sedam tonova sortira po visini,
+  dobija se prepoznatljiv obrazac: pet celih tonova i dve manje
+  stepenice koje se zovu limme. Cela durska lestvica iz samo prostih
+  brojeva dva i tri."
+
+  „Ali tu nastaje problem. Ako nastavimo i napravimo dvanaest kvinti
+  uzastopno, očekivali bismo da se vratimo na polazni ton, samo sedam
+  oktava više. Ne vratimo se. Razlika između dvanaest kvinti i sedam
+  oktava zove se pitagorejska koma — iznosi tačno 23 i po centa.
+  Mali, ali tvrdoglav ostatak koji nikako ne može da se sakrije. Strogo
+  matematički se dokazuje da ne postoje pozitivni celi brojevi koji bi
+  zatvorili ovaj krug — jer bi to značilo da je neki paran broj
+  istovremeno i neparan, što je nemoguće."
+
+═══════════════════════════════════════════════════════════════════════════════
+                       4.  TEMPEROVANO UGAĐANJE · ¹²√2
+                                Aleksandra
+═══════════════════════════════════════════════════════════════════════════════
+
+ALEKSANDRA:
+
+  „Pitagorejska koma je dva milenijuma mučila muzičare i matematičare.
+  Konačno rešenje dato je tek u osamnaestom veku — jednako temperovano
+  ugađanje. Ideja je radikalno jednostavna: podelimo oktavu na dvanaest
+  potpuno jednakih koraka. Da bi to bilo moguće, svaki polustepen mora
+  da množi prethodni ton istim faktorom q, takvim da q na dvanaesti
+  stepen daje tačno dva. Iz toga sledi da je q jednako dvanaestom korenu
+  iz dva — i to je druga osnovna formula našeg rada."
+
+  „Taj broj je iracionalan — strogo se dokazuje da se ne može zapisati
+  kao razlomak celih brojeva. To znači da je moderna muzika napustila
+  pitagorejski ideal celobrojne harmonije. Ali zauzvrat smo dobili
+  sistem u kome svi tonaliteti — i C-dur, i Fis-dur, i bilo koji drugi —
+  zvuče jednako dobro. Kvinta odstupa od čiste svega dva centa, što je
+  daleko ispod praga koji uho može da razlikuje. Terca je nešto šira
+  nego što bi prirodno bila, oko trinaest centa, i odatle blago lebdeća
+  napetost temperovanih akorda. Cena je mala, dobit ogromna — i to je
+  razlog zašto je danas gotovo sva muzika koju slušamo u temperovanom
+  sistemu."
+
+═══════════════════════════════════════════════════════════════════════════════
+                    5.  KONSONANCA · DISONANCA · HELMHOLC
+                                   Ilija
+═══════════════════════════════════════════════════════════════════════════════
+
+ILIJA:
+
+  „Sve ovo otvara jedno duboko pitanje — zašto neki intervali zvuče
+  prijatno, a drugi neprijatno? Empirijski odgovor dao je Pitagora —
+  manji brojevi, čistiji zvuk. Ali fizičko objašnjenje dato je tek u
+  devetnaestom veku. Herman fon Helmholc je 1863. godine, u delu O
+  osećajima tona, dao matematički precizan opis."
+
+  „Kada dva tona imaju bliske, ali ne i identične frekvencije, njihov
+  zbir osciluje između pojačavanja i poništavanja. Čuje se periodično
+  pulsiranje glasnoće — to se zove udar. Frekvencija udara jednaka je
+  apsolutnoj razlici frekvencija dva tona. Kada je razlika dva do tri
+  herca, čujemo polagano talasanje — taj fenomen muzičari koriste za
+  fino ugađanje instrumenata. Ali kad razlika poraste između dvadeset
+  i pedeset herca, taj isti fenomen zvuči kao neprijatno hrapanje. To je
+  ono što doživljavamo kao disonancu."
+
+  „Pošto svaki ton sa sobom nosi ceo obertonski niz, hrapavost ne
+  nastaje samo između osnovnih tonova, već između svih parova bliskih
+  harmonika. Konsonantni intervali su oni kod kojih se harmonici tačno
+  poklapaju — kao kod kvinte tri prema dva. Disonantni intervali su
+  oni kod kojih se mimoilaze. Dakle, lepota harmonije nije stvar ukusa —
+  to je čista fizika talasa."
+
+═══════════════════════════════════════════════════════════════════════════════
+                    6.  FURIJEOV RED · C-DUR AKORD
+                                  Bogdan
+═══════════════════════════════════════════════════════════════════════════════
+
+BOGDAN:
+
+  „Sve do sada govorili smo o pojedinačnim tonovima i intervalima. Ali
+  stvarni zvuk je gotovo uvek složen. Francuski matematičar Žan-Baptist
+  Žozef Furije je 1822. dokazao nešto izvanredno: svaka periodična
+  funkcija — pa znači i svaki muzički ton — može se zapisati kao zbir
+  sinusoida, čije su frekvencije celobrojni višekratnici osnovne. To je
+  treća osnovna formula rada — Furijeov red."
+
+  „Posledica je dramatična. Kada čujete violinu i flautu kako sviraju
+  isti ton, oni zvuče različito isključivo zato što imaju različite
+  amplitude tih harmonika. Tembr — boja zvuka — sveden je na čistu
+  matematiku. A kad sviramo C-dur akord — tri tona, C, E i G, na
+  frekvencijama dvesta šezdeset jedan, trista dvadeset devet i trista
+  devedeset dva herca — njihovi obertonski nizovi se preklapaju. Treći
+  harmonik tona C poklapa se sa drugim harmonikom tona G na otprilike
+  785 herca. Iz tih preklapanja izlazi onaj utisak punog, stabilnog,
+  zatvorenog zvuka koji prepoznajemo kao sklad."
+
+  „U jednom jedinom akordu, dakle, istovremeno žive pitagorejski
+  razlomci, temperovani iracionalni odnosi, Helmholcovo poklapanje
+  obertona i Furijeova dekompozicija. Sve ono o čemu smo govorili — u
+  jednoj sekundi zvuka."
+
+═══════════════════════════════════════════════════════════════════════════════
+                       7.  ARDUINO DEMONSTRATOR
+                          Rastko + Kolja
+                    (uređaj postavljen na sto, laptop pokazuje Serial Monitor)
+═══════════════════════════════════════════════════════════════════════════════
+
+RASTKO:
+
+  „Uz nauči rad, napravili smo interaktivni demonstrator koji sve što
+  ste do sada čuli kao teoriju možete čuti i kao zvuk, i videti u boji.
+  Hardver se sastoji od Arduino Mega mikrokontrolera, pasivnog bazera
+  koji generiše precizne frekvencije, rotary encodera kojim biramo
+  interval, tastera koji menja sistem ugađanja, i RGB LED diode koja
+  pokazuje konsonancu ili disonancu."
+
+KOLJA:
+[okreće encoder]
+
+  „Okretanjem ovog točkića prolazimo kroz intervale — sekunda, terca,
+  kvarta, kvinta, pa sve do oktave."
+
+[klikne encoder na kvintu — PLAY]
+
+  „Ovo je kvinta. Bazer naizmenično svira bazni ton C na 261 herca i
+  gornji ton G na 392 herca. Odnos tih frekvencija je tačno tri prema
+  dva. LED je zelena — savršena konsonanca."
+
+[STOP, okrene na sekundu, PLAY]
+
+  „A ovo je sekunda. Odmah čujete da zvuči neprijatno. Odnos frekvencija
+  je devet prema osam — veći brojevi, grublji zvuk. LED automatski
+  prelazi na crvenu — disonanca."
+
+[STOP, okrene na tercu, PLAY]
+
+  „Sad terca — i tu dolazimo do najzanimljivijeg dela."
+
+[pritiska taster — menja sistem nekoliko puta]
+
+  „Ovim tasterom menjam sistem ugađanja između pitagorejskog i
+  temperovanog. U pitagorejskom sistemu terca je razlomak 81 kroz 64.
+  U temperovanom je iracionalan broj — dvanaesti koren od dva na
+  četvrti stepen. Razlika između ta dva sistema iznosi oko osam herca.
+  Ako pažljivo slušate dok menjam taster, možete je čuti."
+
+[pokazuje na laptop]
+
+  „Na ekranu se u realnom vremenu ispisuju sve frekvencije, matematički
+  odnosi i razlika između sistema u centima — toj mernoj jedinici o
+  kojoj je Aleksandra govorila. Uređaj, dakle, ne samo da svira
+  matematiku — on je i prikazuje numerički."
+
+═══════════════════════════════════════════════════════════════════════════════
+                              8.  ZAKLJUČAK
+                          Pavle Živković + Sava Čuković
+═══════════════════════════════════════════════════════════════════════════════
+
+PAVLE ŽIVKOVIĆ:
+
+  „Tri formule čine kičmu ovog rada. Pitagorin razlomak tri kroz dva,
+  iz kojeg izvire cela durska lestvica, ali koji ne uspeva da zatvori
+  krug od dvanaest kvinti u tačno sedam oktava. Iracionalni dvanaesti
+  koren iz dva, koji rešava komu po cenu da nijedan interval osim
+  oktave više nije savršen razlomak. I Furijeov red, koji razlaže svaki
+  zvuk na sastavne sinusoide i objašnjava tembr."
+
+SAVA ČUKOVIĆ:
+
+  „Muzička harmonija, dakle, nije isključivo estetska kategorija — to
+  je sistem merljivih relacija. Od antičkog monohorda, preko klavira
+  Johana Sebastijana Baha, do moderne MP3 kompresije i Spotifaja na
+  vašem telefonu — ista matematika. Svaki akord koji čujemo nosi u
+  sebi aritmetiku celih brojeva, fiziku stojećih talasa i strukturu
+  beskonačnih trigonometrijskih redova. Hvala na pažnji."
+
+[svi učesnici izlaze ispred — naklon]
+
+═══════════════════════════════════════════════════════════════════════════════
+                         NAPOMENE ZA GENERALNU PROBU
+═══════════════════════════════════════════════════════════════════════════════
+
+  •  Pre probe proveriti da je gitara naštimovana (Nikola).
+  •  Arduino mora biti uključen i provoljno glasan (bazer čujan u sali).
+  •  Laptop sa Serial Monitorom okrenut prema publici, font dovoljno
+     veliki da se brojke vide iz drugog reda.
+  •  Sajt otvoren na projektoru, sa otvorenim menijem za skok na sekciju.
+     Svaki govornik može pokazati svoju sekciju na ekranu pre nego što
+     počne da priča.
+  •  Tempo: ne žuriti. Pauze između govornika 2–3 sekunde — daje publici
+     vremena da apsorbuje pređašnje.
+  •  Akcenti na ključnim brojevima: 3/2, ¹²√2, 23.46 centa, 261/329/392 Hz.
+  •  Završni naklon — svi izlaze, ne samo Sava.
+
+═══════════════════════════════════════════════════════════════════════════════
+                              KRAJ SCENARIJA
+═══════════════════════════════════════════════════════════════════════════════

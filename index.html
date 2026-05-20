@@ -598,7 +598,9 @@
     <a href="#temperament"><span class="i">09</span><span>Temperovano ugađanje</span><span class="arrow">→</span></a>
     <a href="#furije"><span class="i">10</span><span>Furijeov red</span><span class="arrow">→</span></a>
     <a href="#akord"><span class="i">11</span><span>C-dur akord</span><span class="arrow">→</span></a>
-    <a href="#zakljucak"><span class="i">12</span><span>Zaključak</span><span class="arrow">→</span></a>
+    <a href="#arduino"><span class="i">12</span><span>Arduino demonstrator</span><span class="arrow">→</span></a>
+    <a href="#zakljucak"><span class="i">13</span><span>Zaključak</span><span class="arrow">→</span></a>
+    <a href="#literatura"><span class="i">14</span><span>Literatura</span><span class="arrow">→</span></a>
   </nav>
   <div class="menu-footer">
     Prva kragujevačka gimnazija
@@ -682,7 +684,7 @@
       <div class="card">
         <span class="symbol"><span class="frac"><span class="num">a</span><span class="den">b</span></span></span>
         <h4>Razlomci</h4>
-        <p>Odnos dve frekvencije. Množenje razlomaka odgovara nadovezivanju intervala: <span class="math">3/2 · 4/3 = 2/1</span> — kvinta plus kvarta čini oktavu.</p>
+        <p>Odnos dve frekvencije. Množenje razlomaka odgovara nadovezivanju intervala: <span class="math">3/2 · 4/3 = 2/1</span> — kvinta i kvarta zajedno čine oktavu.</p>
       </div>
       <div class="card lavender">
         <span class="symbol">aq<sup>n</sup></span>
@@ -798,6 +800,11 @@
       </table>
     </div>
     <p class="caption">Pet celih tonova i dve <em>limme</em> — T·T·L·T·T·T·L, prepoznatljiva struktura durske lestvice.</p>
+
+    <div class="card peach" style="margin-top: 2.5rem;">
+      <h4>Sintonička koma</h4>
+      <p>Pitagorejska skala koristi samo proste brojeve <strong>2 i 3</strong> i tako dobija veliku tercu <span class="math">81/64 ≈ 1.2656</span>. Kasnije <em>čisto ugađanje</em> (just intonation) uvodi i prost broj <strong>5</strong> i dobija lepšu tercu <span class="math">5/4 = 1.25</span>. Razlika između ove dve terce naziva se <strong>sintonička koma</strong> i iznosi <span class="math">81/80 ≈ 21.5 centi</span> — sasvim čujna, i upravo razlog zašto pitagorejski akordi sa tercama zvuče napeto.</p>
+    </div>
   </div>
 </section>
 
@@ -862,7 +869,7 @@
       <h2>Fizika potvrđuje <span class="italic-accent">intuiciju</span></h2>
     </div>
 
-    <p class="narrow center" style="text-align: center;">Zvuk je longitudinalni talas. Svaki periodični talas karakterišu tri veličine:</p>
+    <p class="narrow center" style="text-align: center;">Zvuk je mehanički poremećaj koji se kroz vazduh prostire kao longitudinalni talas, brzinom oko <strong>343 m/s na 20 °C</strong>. Svaki periodični talas karakterišu tri veličine:</p>
 
     <div class="card-grid">
       <div class="card mint">
@@ -873,7 +880,7 @@
       <div class="card lavender">
         <span class="symbol">λ</span>
         <h4>Talasna dužina [m]</h4>
-        <p>Rastojanje između dva susedna maksimuma. Povezana sa frekvencijom: <span class="math">v = f · λ</span>.</p>
+        <p>Rastojanje između dva susedna maksimuma. Povezana sa frekvencijom: <span class="math">v = f · λ</span>. Za ton A: λ ≈ 343/440 ≈ 0.78 m.</p>
       </div>
       <div class="card peach">
         <span class="symbol">A</span>
@@ -884,8 +891,10 @@
 
     <div class="visual">
       <canvas id="sineWave" width="800" height="160"></canvas>
-      <div class="caption">Sinusoidni talas — najprostiji periodični oblik, osnova svih složenijih zvukova.</div>
+      <div class="caption">Sinusoidni talas — najjednostavniji periodični oblik, osnova svih složenijih zvukova: <span class="math">y(x,t) = A · sin(2πft − 2πx/λ)</span>.</div>
     </div>
+
+    <p class="small" style="text-align: center; margin-top: 1.5rem; color: var(--ink-3);">Prostiranje talasa opisuje d'Alamberova jednačina <span class="math">∂²y/∂t² = v² · ∂²y/∂x²</span> — temelj svega što sledi.</p>
   </div>
 </section>
 
@@ -979,7 +988,12 @@
       </table>
     </div>
 
-    <p style="margin-top: 2rem;">Helmholc (1863) dao je fizičko objašnjenje: kada su harmonici dva tona bliski ali ne identični, nastaju <em>udari</em> koji u zoni 20–50 Hz proizvode senzaciju <strong>hrapavosti</strong>. Konsonantni intervali su oni kod kojih se harmonici poklapaju; disonantni — gde se mimoilaze.</p>
+    <h3 style="margin-top: 2.5rem;">Helmholcova teorija udara</h3>
+    <p>Herman fon Helmholc je 1863. godine, u delu <em>Die Lehre von den Tonempfindungen</em>, dao fizičko objašnjenje. Kada dva tona imaju bliske, ali ne i identične frekvencije, njihov zbir osciluje između pojačavanja i poništavanja — čuje se <strong>periodično pulsiranje glasnoće</strong> čija frekvencija iznosi:</p>
+    <div class="display-eq">f<sub>udara</sub> = |f<sub>1</sub> − f<sub>2</sub>|</div>
+    <p>Pri razlici od 2–3 Hz, čujemo polagano talasanje koje muzičari koriste za fino ugađanje. Kada razlika poraste na <strong>20–50 Hz</strong>, umesto ritmičnog pulsiranja čuje se neprijatan, grub zvuk — <em>hrapavost</em> (roughness). To je ono što doživljavamo kao disonancu. Pošto svaki ton nosi čitav obertonski niz, hrapavost ne nastaje samo između osnovnih tonova već između svih parova bliskih harmonika. Kod kvinte (3:2) treći harmonik nižeg tona poklapa se sa drugim harmonikom višeg — i tako kroz čitav niz; kod male sekunde (16:15), gotovo svaki par harmonika upada u zonu hrapavosti.</p>
+
+    <p class="small" style="margin-top: 2rem; color: var(--ink-3); font-style: italic;">Matematika daje <strong>neophodan</strong>, ali ne i dovoljan uslov konsonance — terca je u srednjem veku važila za disonancu, a u džezu i bluzu disonance su deo idioma. Potpuno objašnjenje traži presek fizike, fiziologije i kulture.</p>
   </div>
 </section>
 
@@ -1035,6 +1049,8 @@
       <h4>Dokaz iracionalnosti <sup>12</sup>√2</h4>
       <p>Pretpostavimo <span class="math">¹²√2 = p/q</span>, uzajamno prosti. Tada <span class="math">p<sup>12</sup> = 2·q<sup>12</sup></span> → <span class="math">p</span> paran → <span class="math">p = 2k</span> → <span class="math">2<sup>11</sup>k<sup>12</sup> = q<sup>12</sup></span> → <span class="math">q</span> paran. Ali ne mogu oba biti parni. <strong>Kontradikcija.</strong> ∎</p>
     </div>
+
+    <p class="small" style="text-align: center; color: var(--ink-3); font-style: italic; margin-top: 1.5rem;">Po <strong>Veberovom zakonu</strong> (1834), uho reaguje na odnos, ne na razliku frekvencija — zato je tonska skala prirodno logaritamska: <span class="math">h = log<sub>2</sub>(f / f<sub>0</sub>)</span>.</p>
 
     <h3>Cent — merna jedinica</h3>
     <p>Oktava se deli na <strong>1200 centi</strong>, svaki polustepen na 100. Interval sa odnosom <span class="math">r</span> ima <span class="math">n = 1200 · log₂(r)</span> centi. Razlika od 1 centa nije čujna — prag detekcije je oko 5 centi.</p>
@@ -1100,6 +1116,8 @@
       <canvas id="spectraCanvas" width="800" height="240"></canvas>
       <div class="caption">Spektri tri instrumenta. Klarinet ima dominantne neparne harmonike — zato zvuči "šuplje".</div>
     </div>
+
+    <p class="small" style="text-align: center; margin-top: 2rem; color: rgba(246,241,230,0.6); font-style: italic;">Koeficijenti A<sub>n</sub> izračunavaju se integralima po jednom periodu funkcije. <strong>Brza Furijeova transformacija</strong> (FFT) je osnova digitalne obrade zvuka — ekvilajzera, sintesajzera i MP3 kompresije.</p>
   </div>
 </section>
 
@@ -1156,6 +1174,77 @@
   </div>
 </section>
 
+<!-- ═══════════════ ARDUINO DEMO ═══════════════ -->
+<section class="tint-lavender" id="arduino">
+  <div class="deco-layer">
+    <span class="deco-symbol teal deco-float" style="top: 8%; left: 5%; font-size: 8rem; font-style: normal;">⚡</span>
+    <span class="deco-symbol gold deco-float-rev" style="top: 14%; right: 6%; font-size: 7rem; font-style: normal;">♪</span>
+    <span class="deco-symbol deco-mono" style="top: 45%; right: 8%; font-size: 1rem; opacity: 0.08;">261 Hz · 392 Hz</span>
+    <span class="deco-symbol deco-mono" style="bottom: 30%; left: 12%; font-size: 0.85rem; opacity: 0.07;">if (ratio == 3/2) LED.green()</span>
+    <span class="deco-symbol crimson deco-pulse" style="top: 40%; left: 50%; font-size: 1.4rem;">●</span>
+    <span class="deco-symbol teal deco-pulse" style="bottom: 22%; right: 18%; font-size: 1.4rem; animation-delay: 1s;">●</span>
+    <svg class="deco-svg faint" style="bottom: 8%; left: 5%; width: 240px; height: 60px;" viewBox="0 0 240 60" preserveAspectRatio="none">
+      <path d="M 0 30 L 40 30 L 50 10 L 70 50 L 90 30 L 240 30" stroke-width="1.5"/>
+    </svg>
+  </div>
+  <div class="container reveal">
+    <div class="section-head">
+      <div class="eyebrow">— X · Demonstrator —</div>
+      <h2>Matematika koja <span class="italic-accent">zvuči</span></h2>
+    </div>
+
+    <p class="lead narrow" style="text-align: center; margin: 0 auto 3rem;">Uz nauči rad, napravljen je interaktivni uređaj koji sve što teorija opisuje možete <em>čuti uživo</em> i videti odmah na LED diodi.</p>
+
+    <h3>Hardver</h3>
+    <div class="card-grid">
+      <div class="card mint">
+        <span class="symbol">⌬</span>
+        <h4>Arduino Mega</h4>
+        <p>Mikrokontroler koji generiše precizne frekvencije i upravlja celim demonstratorom u realnom vremenu.</p>
+      </div>
+      <div class="card lavender">
+        <span class="symbol">♪</span>
+        <h4>Pasivni bazer</h4>
+        <p>Pretvara digitalne pulseve u zvučni signal. Iste frekvencije iz rada (C = 261 Hz, G = 392 Hz...) čuju se direktno iz uređaja.</p>
+      </div>
+      <div class="card peach">
+        <span class="symbol">↻</span>
+        <h4>Rotary encoder</h4>
+        <p>Okretanjem se bira interval — sekunda, terca, kvarta, kvinta, sve do oktave. Klikom se interval pušta.</p>
+      </div>
+      <div class="card sand">
+        <span class="symbol">⊟</span>
+        <h4>Taster · sistem</h4>
+        <p>Menja sistem ugađanja između <strong>pitagorejskog</strong> i <strong>temperovanog</strong>. Razlika je odmah čujna na terci.</p>
+      </div>
+      <div class="card mint">
+        <span class="symbol" style="color: var(--crimson);">●</span>
+        <h4>RGB LED dioda</h4>
+        <p>Zelena za konsonancu, crvena za disonancu. Matematika postaje <em>vidljiva</em> u trenutku kad zazvuči.</p>
+      </div>
+      <div class="card lavender">
+        <span class="symbol">⌨</span>
+        <h4>Serial Monitor</h4>
+        <p>Laptop u realnom vremenu ispisuje frekvencije, matematičke odnose i razliku u centima — uređaj <em>i</em> svira <em>i</em> prikazuje matematiku.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 3rem;">Tri scenarija demonstracije</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Interval</th><th>Tonovi</th><th>Odnos</th><th>LED</th><th>Šta čujemo</th></tr></thead>
+        <tbody>
+          <tr><td>Čista kvinta</td><td>C (261 Hz) · G (392 Hz)</td><td class="math">3/2</td><td style="color: var(--teal-dark); font-weight: 600;">● zelena</td><td>savršena konsonanca</td></tr>
+          <tr><td>Mala sekunda</td><td>9/8 odnos</td><td class="math">9/8</td><td style="color: var(--crimson); font-weight: 600;">● crvena</td><td>oštra disonanca</td></tr>
+          <tr><td>Velika terca</td><td>pitag. <span class="math">81/64</span> ↔ temp. <span class="math">2<sup>4/12</sup></span></td><td>≈ 8 Hz razlike</td><td>žuta · prelaz</td><td>razlika sistema, čujna uživo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote" style="margin-top: 3rem;">Uređaj ne samo da <em>svira</em> matematiku — on je i <em>prikazuje</em> numerički.</div>
+  </div>
+</section>
+
 <!-- ═══════════════ ZAKLJUČAK ═══════════════ -->
 <section class="tint-mint" id="zakljucak">
   <div class="deco-layer">
@@ -1168,8 +1257,36 @@
   <div class="narrow reveal">
     <div class="eyebrow">— Zaključak —</div>
     <h2>Tri formule, <span class="italic-accent">jedna priča</span></h2>
-    <p style="margin-top: 2rem;"><strong>Pitagorin razlomak 3/2</strong> daje skalu, ali se 12 kvinti nikada ne vraćaju u 7 oktava. <strong>Iracionalni koren <sup>12</sup>√2</strong> rešava komu po cenu da nijedan interval (osim oktave) nije savršen razlomak. <strong>Furijeov red</strong> dekomponuje svaki zvuk na sinusoide i objašnjava tembr.</p>
+    <p style="margin-top: 2rem;"><strong>Pitagorin razlomak 3/2</strong> daje skalu, ali se krug od 12 kvinti nikad ne zatvara u tačno 7 oktava. <strong>Iracionalni koren <sup>12</sup>√2</strong> rešava komu po cenu da nijedan interval (osim oktave) nije savršen razlomak. <strong>Furijeov red</strong> razlaže svaki zvuk na sinusoide i objašnjava tembr.</p>
     <p>Muzička harmonija nije estetska kategorija — to je <em>sistem merljivih relacija</em>. Od antičkog monohorda do moderne MP3 kompresije, ista matematika.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ LITERATURA ═══════════════ -->
+<section id="literatura">
+  <div class="deco-layer">
+    <span class="deco-symbol gold deco-float" style="top: 8%; left: 6%; font-size: 8rem;">§</span>
+    <span class="deco-symbol teal deco-float-rev" style="bottom: 10%; right: 8%; font-size: 7rem;">¶</span>
+    <span class="deco-symbol deco-mono" style="top: 45%; right: 6%; font-size: 0.9rem; opacity: 0.07;">1863 · 1822 · 1834</span>
+    <span class="deco-symbol lila deco-pulse" style="top: 60%; left: 15%; font-size: 1.4rem;">✦</span>
+  </div>
+  <div class="container reveal">
+    <div class="section-head">
+      <div class="eyebrow">— Literatura —</div>
+      <h2>Izvori i <span class="italic-accent">dalja literatura</span></h2>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>№</th><th>Autor i delo</th><th>Izdavač</th><th>God.</th></tr></thead>
+        <tbody>
+          <tr><td>[1]</td><td>Helmholtz H., <em>On the Sensations of Tone as a Physiological Basis for the Theory of Music</em> (originalno: <em>Die Lehre von den Tonempfindungen</em>, 1863)</td><td>Dover Publications, New York</td><td>1954</td></tr>
+          <tr><td>[2]</td><td>Benson D., <em>Music: A Mathematical Offering</em></td><td>Cambridge University Press, Cambridge</td><td>2007</td></tr>
+          <tr><td>[3]</td><td>Loy G., <em>Musimathics: The Mathematical Foundations of Music</em></td><td>MIT Press, Cambridge MA</td><td>2006</td></tr>
+          <tr><td>[4]</td><td>Rossing T. D., Moore F. R., Wheeler P. A., <em>The Science of Sound</em> (3. izdanje)</td><td>Addison Wesley, San Francisco</td><td>2002</td></tr>
+          <tr><td>[5]</td><td>Čauković N., <em>Fizika za prvi razred gimnazije</em></td><td>Zavod za udžbenike, Beograd</td><td>2019</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
